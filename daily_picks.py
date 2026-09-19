@@ -7,10 +7,12 @@ import numpy as np
 import pandas as pd
 
 from data import download_daily, get_nse_eq_universe
-from book_strategies import (
-    annualized_volatility, classic_pivot, donchian_state,
-    moving_average_state, price_momentum_12_1,
-)
+from stocks.support_and_resistance import classic_pivot
+from stocks.channel import donchian_state
+from stocks.low_volatility_anomaly import annualized_volatility
+from stocks.two_moving_averages import ma_10_30_state
+from stocks.three_moving_averages import ma_3_10_21_state
+from stocks.price_momentum import price_momentum_12_1
 
 
 def percentile(series: pd.Series, ascending: bool = True) -> pd.Series:
@@ -26,7 +28,7 @@ def build_candidates(history: dict[str, pd.DataFrame]) -> pd.DataFrame:
         vol = annualized_volatility(daily)
         if mom is None or vol is None:
             continue
-        ma = moving_average_state(daily)
+        ma = {**ma_10_30_state(daily), **ma_3_10_21_state(daily)}
         pivot = classic_pivot(daily)
         close = float(daily["Close"].iloc[-1])
         rows.append({

@@ -1,0 +1,2144 @@
+[
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.2",
+    "title": "Covered call",
+    "page": 18,
+    "slug": "covered_call",
+    "equations": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "summary": "2.2 Strategy: Covered call This strategy (a.k.a. “buy-write” strategy) amounts to buying stock and writing a call option with a strike price K against the stock position. The trader’s outlook on the stock price is neutral to bullish. The covered call strategy has the same payoff as writing a put option (short/naked put).10 While maintaining the long stock position, the trader can generate income by periodically selling OTM call options. We have:11 fT = ST − S0 − (ST − K)+ + C = K − S0 − (K − ST )+ + C (1) S∗ = S0 − C (2) Pmax = K − S0 + C (3) Lmax = S0 − C (4)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.3",
+    "title": "Covered put",
+    "page": 18,
+    "slug": "covered_put",
+    "equations": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "summary": "2.3 Strategy: Covered put This strategy (a.k.a. “sell-write” strategy) amounts to shorting stock and writing a put option with a strike price K against the stock position. The trader’s outlook is 9 H is the net debit for all bought option premia less the net credit for all sold option premia. 10 This is related to put-call parity (see, e.g., [Stoll, 1969], [Hull, 2012]). 11 For some literature on covered call strategies, see, e.g., [Pounds, 1978], [Whaley, 2002], [Feld- man and Roy, 2004], [Hill et al, 2006], [Kapadia and Szado, 2007], [Che and Fung, 2011], [Mugwagwa et al, 2012], [Israelov and Nielsen, 2014], [Israelov and Nielsen, 2015a], [Hemler and Miller, 2015]. 18 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved. neutral to bearish. The covered put strategy has the same payoff as writing a"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.4",
+    "title": "Protective put",
+    "page": 19,
+    "slug": "protective_put",
+    "equations": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "summary": "2.4 Strategy: Protective put This strategy (a.k.a. “married put” or “synthetic call”) amounts to buying stock and an ATM or OTM put option with a strike price K ≤ S0 . The trader’s outlook is bullish. This is a hedging strategy: the put option hedges the risk of the stock price falling. We have:13 fT = ST − S0 + (K − ST )+ − D = K − S0 + (ST − K)+ − D (9) S∗ = S0 + D (10) Pmax = unlimited (11) Lmax = S0 − K + D (12)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.5",
+    "title": "Protective call",
+    "page": 19,
+    "slug": "protective_call",
+    "equations": [
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "summary": "2.5 Strategy: Protective call This strategy (a.k.a. “married call” or “synthetic put”) amounts to shorting stock and buying an ATM or OTM call option with a strike price K ≥ S0 . The trader’s outlook is bearish. This is a hedging strategy: the call option hedges the risk of the stock price rising. We have:14 fT = S0 − ST + (ST − K)+ − D = S0 − K + (K − ST )+ − D (13) S∗ = S0 − D (14) Pmax = S0 − D (15) Lmax = K − S0 + D (16)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.6",
+    "title": "Bull call spread",
+    "page": 19,
+    "slug": "bull_call_spread",
+    "equations": [
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "summary": "2.6 Strategy: Bull call spread This is a vertical spread consisting of a long position in a close to ATM call option with a strike price K1 , and a short position in an OTM call option with a higher 12 The covered put option strategy is symmetrical to the covered call option strategy. Academic literature on the covered put option strategy appears to be scarce. See, e.g., [Che, 2016]. 13 For some literature on protective put strategies, see, e.g., [Figlewski, Chidambaran and Ka- plan, 1993], [Israelov and Nielsen, 2015b], [Israelov, Nielsen and Villalon, 2017], [Israelov, 2017]. 14 The protective call option strategy is symmetrical to the protective put option strategy. Academic literature on the protective call option strategy appears to be scarce. See, e.g., [Jabbour and Budwick, 2010], [Tokic, 2013]. 19 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.7",
+    "title": "Bull put spread",
+    "page": 20,
+    "slug": "bull_put_spread",
+    "equations": [
+      "21",
+      "22",
+      "23",
+      "24"
+    ],
+    "summary": "2.7 Strategy: Bull put spread This is a vertical spread consisting of a long position in an OTM put option with a strike price K1 , and a short position in another OTM put option with a higher strike price K2 . This is a net credit trade. The trader’s outlook is bullish. This is an income strategy. We have: fT = (K1 − ST )+ − (K2 − ST )+ + C (21) S∗ = K2 − C (22) Pmax = C (23) Lmax = K2 − K1 − C (24)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.8",
+    "title": "Bear call spread",
+    "page": 20,
+    "slug": "bear_call_spread",
+    "equations": [
+      "25",
+      "26",
+      "27",
+      "28"
+    ],
+    "summary": "2.8 Strategy: Bear call spread This is a vertical spread consisting of a long position in an OTM call option with a strike price K1 , and a short position in another OTM call option with a lower strike price K2 . This is a net credit trade. The trader’s outlook is bearish. This is an income strategy. We have: fT = (ST − K1 )+ − (ST − K2 )+ + C (25) S∗ = K2 + C (26) Pmax = C (27) Lmax = K1 − K2 − C (28)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.9",
+    "title": "Bear put spread",
+    "page": 20,
+    "slug": "bear_put_spread",
+    "equations": [
+      "29",
+      "30",
+      "31",
+      "32"
+    ],
+    "summary": "2.9 Strategy: Bear put spread This is a vertical spread consisting of a long position in a close to ATM put option with a strike price K1 , and a short position in an OTM put option with a lower 15 For some literature on bull/bear call/put vertical spreads, see, e.g., [Cartea and Pedraz, 2012], [Chaput and Ederington, 2003], [Chaput and Ederington, 2005], [Chen, Chen and Howell, 1999], [Cong, Tan and Weng, 2013], [Cong, Tan and Weng, 2014], [Matsypura and Timkovsky, 2010], [Shah, 2017], [Wong, Thompson and Teh, 2011], [Zhang, 2015]. Also see [Clarke, de Silva and Thorley, 2013], [Cohen, 2005], [Jabbour and Budwick, 2010], [McMillan, 2002], [The Options Institute, 1995]. 20 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved. strike price K2 . This is a net debit trade. The trader’s outlook is"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.10",
+    "title": "Long synthetic forward",
+    "page": 21,
+    "slug": "long_synthetic_forward",
+    "equations": [
+      "33",
+      "34",
+      "35",
+      "36"
+    ],
+    "summary": "2.10 Strategy: Long synthetic forward This strategy amounts to buying an ATM call option and selling an ATM put option with a strike price K = S0 . This can be a net debit or net credit trade. Typically, |H| S0 . The trader’s outlook is bullish: this strategy mimics a long stock or futures position; it replicates a long forward contract with the delivery price K and the same maturity as the options. This is a capital gain strategy. We have:16 fT = (ST − K)+ − (K − ST )+ − H = ST − K − H (33) S∗ = K + H (34) Pmax = unlimited (35) Lmax = K + H (36)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.11",
+    "title": "Short synthetic forward",
+    "page": 21,
+    "slug": "short_synthetic_forward",
+    "equations": [
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "summary": "2.11 Strategy: Short synthetic forward This strategy amounts to buying an ATM put option and selling an ATM call option with a strike price K = S0 . This can be a net debit or net credit trade. Typically, |H| S0 . The trader’s outlook is bearish: this strategy mimics a short stock or futures position; it replicates a short forward contract with the delivery price K and the same maturity as the options. This is a capital gain strategy. We have: fT = (K − ST )+ − (ST − K)+ − H = K − ST − H (37) S∗ = K − H (38) Pmax = K − H (39) Lmax = unlimited (40)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.12",
+    "title": "Long combo",
+    "page": 21,
+    "slug": "long_combo",
+    "equations": [
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46"
+    ],
+    "summary": "2.12 Strategy: Long combo This strategy (a.k.a. “long risk reversal”) amounts to buying an OTM call option with a strike price K1 and selling an OTM put option with a strike price K2 . The 16 For some literature on long/short synthetic forward contracts (a.k.a. synthetic futures), see, e.g., [Benavides, 2009], [Bozic and Fortenbery, 2012], [DeMaskey, 1995], [Ebrahim and Rahman, 2005], [Nandy and Chattopadhyay, 2016]. 21 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved. trader’s outlook is bullish. This is a capital gain strategy.17 We have (K1 > K2 ): fT = (ST − K1 )+ − (K2 − ST )+ − H (41) S∗ = K1 + H, H > 0 (42) S∗ = K2 + H, H < 0 (43) K2 ≤ S∗ ≤ K1 , H = 0 (44) Pmax = unlimited (45) Lmax = K2 + H (46)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.13",
+    "title": "Short combo",
+    "page": 22,
+    "slug": "short_combo",
+    "equations": [
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52"
+    ],
+    "summary": "2.13 Strategy: Short combo This strategy (a.k.a. “short risk reversal”) amounts to buying an OTM put option with a strike price K1 and selling an OTM call option with a strike price K2 . The trader’s outlook is bearish. This is a capital gain strategy. We have (K2 > K1 ): fT = (K1 − ST )+ − (ST − K2 )+ − H (47) S∗ = K1 − H, H > 0 (48) S∗ = K2 − H, H < 0 (49) K1 ≤ S∗ ≤ K2 , H = 0 (50) Pmax = K1 − H (51) Lmax = unlimited (52)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.14",
+    "title": "Bull call ladder",
+    "page": 22,
+    "slug": "bull_call_ladder",
+    "equations": [
+      "53",
+      "54",
+      "55",
+      "56",
+      "57"
+    ],
+    "summary": "2.14 Strategy: Bull call ladder This is a vertical spread consisting of a long position in (usually) a close to ATM call option with a strike price K1 , a short position in an OTM call option with a strike price K2 , and a short position in another OTM call option with a higher strike price K3 . A bull call ladder is a bull call spread financed by selling another OTM call option (with the strike price K3 ).18 This adjusts the trader’s outlook from bullish (bull call spread) to conservatively bullish or even non-directional (with an expectation of low volatility). We have: fT = (ST − K1 )+ − (ST − K2 )+ − (ST − K3 )+ − H (53) S∗down = K1 + H, H > 0 (54) S∗up = K3 + K2 − K1 − H (55) Pmax = K2 − K1 − H (56) Lmax = unlimited (57) 17 For some literature on long/short combo strategies, see, e.g., [Rusnáková, Šoltés and Szabo, 2015], [Šoltés, 2011], [Šoltés and Rusnáková, 2012]. Also"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.15",
+    "title": "Bull put ladder",
+    "page": 23,
+    "slug": "bull_put_ladder",
+    "equations": [
+      "58",
+      "59",
+      "60",
+      "61",
+      "62"
+    ],
+    "summary": "2.15 Strategy: Bull put ladder This is a vertical spread consisting of a short position in (usually) a close to ATM put option with a strike price K1 , a long position in an OTM put option with a strike price K2 , and a long position in another OTM put option with a lower strike price K3 . A bull put ladder typically arises when a bull put spread (a bullish strategy) goes wrong (the stock trades lower), so the trader buys another OTM put option (with the strike price K3 ) to adjust the position to bearish. We have:19 fT = (K3 − ST )+ + (K2 − ST )+ − (K1 − ST )+ − H (58) S∗up = K1 + H, H < 0 (59) S∗down = K3 + K2 − K1 − H (60) Pmax = K3 + K2 − K1 − H (61) Lmax = K1 − K2 + H (62)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.16",
+    "title": "Bear call ladder",
+    "page": 23,
+    "slug": "bear_call_ladder",
+    "equations": [
+      "63",
+      "64",
+      "65",
+      "66",
+      "67"
+    ],
+    "summary": "2.16 Strategy: Bear call ladder This is a vertical spread consisting of a short position in (usually) a close to ATM call option with a strike price K1 , a long position in an OTM call option with a strike price K2 , and a long position in another OTM call option with a higher strike price K3 . A bear call ladder typically arises when a bear call spread (a bearish strategy) goes wrong (the stock trades higher), so the trader buys another OTM call option (with the strike price K3 ) to adjust the position to bullish. We have: fT = (ST − K3 )+ + (ST − K2 )+ − (ST − K1 )+ − H (63) S∗down = K1 − H, H < 0 (64) S∗up = K3 + K2 − K1 + H (65) Pmax = unlimited (66) Lmax = K2 − K1 + H (67)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.17",
+    "title": "Bear put ladder",
+    "page": 23,
+    "slug": "bear_put_ladder",
+    "equations": [
+      "68",
+      "69",
+      "70",
+      "71",
+      "72"
+    ],
+    "summary": "2.17 Strategy: Bear put ladder This is a vertical spread consisting of a long position in (usually) a close to ATM put option with a strike price K1 , a short position in an OTM put option with a strike price K2 , and a short position in another OTM put option with a lower strike price K3 . A bear put ladder is a bear put spread financed by selling another OTM put option (with the strike price K3 ).20 This adjusts the trader’s outlook from bearish (bear put spread) to conservatively bearish or even non-directional (with an 19 For some literature on ladder strategies, see, e.g., [Amaitiek, Bálint and Rešovský, 2010], [Harčariková and Šoltés, 2016], [He, Tang and Zhang, 2016], [Šoltés and Amaitiek, 2010a]. 20 In this sense, as for the bull call ladder, this is an “income” strategy. 23 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.18",
+    "title": "Calendar call spread",
+    "page": 24,
+    "slug": "calendar_call_spread",
+    "equations": [
+      "73",
+      "74"
+    ],
+    "summary": "2.18 Strategy: Calendar call spread This is a horizontal spread consisting of a long position in a close to ATM call option with TTM T 0 and a short position in another call option with the same strike price K but shorter TTM T < T 0 . This is a net debit trade. The trader’s outlook is neutral to bullish. At the expiration of the short call option (t = T ), the best case scenario is if the stock price is right at the strike price (ST = K). At t = T let V be the value of the long call option (expiring at t = T 0 ) assuming ST = K. We have:21 Pmax = V − D (73) Lmax = D (74) If at the expiration of the short call option the stock price Sstop−loss ≤ ST ≤ K, where Sstop−loss is the stop-loss price below which the trader would unwind the entire position, then the trader can write another call option with the strike price K and TTM T1 < T 0 . While maintaining the long position in the call"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.19",
+    "title": "Calendar put spread",
+    "page": 24,
+    "slug": "calendar_put_spread",
+    "equations": [
+      "75",
+      "76"
+    ],
+    "summary": "2.19 Strategy: Calendar put spread This is a horizontal spread consisting of a long position in a close to ATM put option with TTM T 0 and a short position in another put option with the same strike price K but shorter TTM T < T 0 . This is a net debit trade. The trader’s outlook is neutral to bearish. At the expiration of the short put option (t = T ), the best case scenario is if the stock price is right at the strike price (ST = K). At t = T let V be the value of the long put option (expiring at t = T 0 ) assuming ST = K. We have: Pmax = V − D (75) Lmax = D (76) If at the expiration of the short put option the stock price K ≤ ST ≤ Sstop−loss , where Sstop−loss is the stop-loss price above which the trader would unwind the 21 For some literature on calendar/diagonal call/put spreads, see, e.g., [Carmona and Durrleman, 2003], [Carr and Javaheri, 2005], [Dale and Currie, 2015],"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.20",
+    "title": "Diagonal call spread",
+    "page": 25,
+    "slug": "diagonal_call_spread",
+    "equations": [
+      "77",
+      "78"
+    ],
+    "summary": "2.20 Strategy: Diagonal call spread This is a diagonal spread consisting of a long position in a deep ITM call option with a strike price K1 and TTM T 0 , and a short position in an OTM call option with a strike price K2 and shorter TTM T < T 0 . This is a net debit trade. The trader’s outlook is bullish. At t = T let V be the value of the long call option (expiring at t = T 0 ) assuming ST = K. We have: Pmax = V − D (77) Lmax = D (78) If at the expiration of the short call option the stock price Sstop−loss ≤ ST ≤ K2 , where Sstop−loss is the stop-loss price below which the trader would unwind the entire position, then the trader can write another OTM call option with TTM T1 < T 0 . While maintaining the long position in the call option with TTM T 0 , the trader can generate income by periodically selling OTM call options with shorter maturities. In this regard, this strategy is similar"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.21",
+    "title": "Diagonal put spread",
+    "page": 25,
+    "slug": "diagonal_put_spread",
+    "equations": [
+      "79",
+      "80"
+    ],
+    "summary": "2.21 Strategy: Diagonal put spread This is a diagonal spread consisting of a long position in a deep ITM put option with a strike price K1 and TTM T 0 , and a short position in an OTM put option with a strike price K2 and shorter TTM T < T 0 . This is a net debit trade. The trader’s outlook is bearish. At t = T let V be the value of the long put option (expiring at t = T 0 ) assuming ST = K. We have: Pmax = V − D (79) Lmax = D (80) If at the expiration of the short put option the stock price K2 ≤ ST ≤ Sstop−loss , where Sstop−loss is the stop-loss price above which the trader would unwind the entire position, then the trader can write another OTM put option with TTM T1 < T 0 . While maintaining the long position in the put option with TTM T 0 , the trader can generate income by periodically selling OTM put options with shorter maturities. In this regard, this strategy is similar to the"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.22",
+    "title": "Long straddle",
+    "page": 26,
+    "slug": "long_straddle",
+    "equations": [
+      "81",
+      "82",
+      "83",
+      "84",
+      "85"
+    ],
+    "summary": "2.22 Strategy: Long straddle This is a volatility strategy consisting of a long position in an ATM call option, and a long position in an ATM put option with a strike price K. This is a net debit trade. The trader’s outlook is neutral. This is a capital gain strategy. We have22 : fT = (ST − K)+ + (K − ST )+ − D (81) S∗up = K + D (82) S∗down = K − D (83) Pmax = unlimited (84) Lmax = D (85)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.23",
+    "title": "Long strangle",
+    "page": 26,
+    "slug": "long_strangle",
+    "equations": [
+      "86",
+      "87",
+      "88",
+      "89",
+      "90"
+    ],
+    "summary": "2.23 Strategy: Long strangle This is a volatility strategy consisting of a long position in an OTM call option with a strike price K1 , and a long position in an OTM put option with a strike price K2 . This is a net debit trade. However, because both call and put options are OTM, this strategy is less costly to establish than a long straddle position. The flipside is that the movement in the stock price required to reach one of the break-even points is also more significant. The trader’s outlook is neutral. This is a capital gain strategy. We have: fT = (ST − K1 )+ + (K2 − ST )+ − D (86) S∗up = K1 + D (87) S∗down = K2 − D (88) Pmax = unlimited (89) Lmax = D (90)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.24",
+    "title": "Long guts",
+    "page": 26,
+    "slug": "long_guts",
+    "equations": [
+      "91",
+      "92",
+      "93",
+      "94",
+      "95"
+    ],
+    "summary": "2.24 Strategy: Long guts This is a volatility strategy consisting of a long position in an ITM call option with a strike price K1 , and a long position in an ITM put option with a strike price K2 . This is a net debit trade. Since both call and put options are ITM, this strategy 22 For some literature on straddle/strangle strategies, see, e.g., [Copeland and Galai, 1983], [Coval and Shumway, 2001], [Engle and Rosenberg, 2000], [Gao, Xing and Zhang, 2017], [Goltz and Lai, 2009], [Guo, 2000], [Hansch, Naik and Viswanathan, 1998], [Noh, Engle and Kane, 1994], [Rusnáková and Šoltés, 2012], [Suresh, 2015]. Academic literature specifically on long/short guts strategies (which can be thought of as variations on straddles) appears to be more scarce. For a book reference, see, e.g., [Cohen, 2005]. For covered straddles, see, e.g., [Johnson, 1979]. 26 Electronic copy available at:"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.25",
+    "title": "Short straddle",
+    "page": 27,
+    "slug": "short_straddle",
+    "equations": [
+      "96",
+      "97",
+      "98",
+      "99",
+      "100"
+    ],
+    "summary": "2.25 Strategy: Short straddle This a is sideways strategy consisting of a short position in an ATM call option, and a short position in an ATM put option with a strike price K. This is a net credit trade. The trader’s outlook is neutral. This is an income strategy. We have: fT = −(ST − K)+ − (K − ST )+ + C (96) S∗up = K + C (97) S∗down = K − C (98) Pmax = C (99) Lmax = unlimited (100)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.26",
+    "title": "Short strangle",
+    "page": 27,
+    "slug": "short_strangle",
+    "equations": [
+      "101",
+      "102",
+      "103",
+      "104",
+      "105"
+    ],
+    "summary": "2.26 Strategy: Short strangle This is a sideways strategy consisting of a short position in an OTM call option with a strike price K1 , and a short position in an OTM put option with a strike price K2 . This is a net credit trade. Since both call and put options are OTM, this strategy is less risky than a short straddle position. The flipside is that the initial credit is also lower. The trader’s outlook is neutral. This is an income strategy. We have: fT = −(ST − K1 )+ − (K2 − ST )+ + C (101) S∗up = K1 + C (102) S∗down = K2 − C (103) Pmax = C (104) Lmax = unlimited (105)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.27",
+    "title": "Short guts",
+    "page": 27,
+    "slug": "short_guts",
+    "equations": [
+      "106",
+      "107",
+      "108",
+      "109",
+      "110"
+    ],
+    "summary": "2.27 Strategy: Short guts This is a sideways strategy consisting of a short position in an ITM call option with a strike price K1 , and a short position in an ITM put option with a strike price K2 . This is a net credit trade. Since both call and put options are ITM, the initial 23 Otherwise this strategy would generate risk-free profits. 27 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved. credit is higher than in a short straddle position. The flipside is that the risk is also higher. The trader’s outlook is neutral. This is an income strategy. We have:24 fT = −(ST − K1 )+ − (K2 − ST )+ + C (106) S∗up = K1 + C (107) S∗down = K2 − C (108) Pmax = C − (K2 − K1 ) (109) Lmax = unlimited (110)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.28",
+    "title": "Long call synthetic straddle",
+    "page": 28,
+    "slug": "long_call_synthetic_straddle",
+    "equations": [
+      "111",
+      "112",
+      "113",
+      "114",
+      "115"
+    ],
+    "summary": "2.28 Strategy: Long call synthetic straddle This volatility strategy (which is the same as a long straddle with the put replaced by a synthetic put) amounts to shorting stock and buying two ATM (or the nearest ITM) call options with a strike price K. The trader’s outlook is neutral. This is a capital gain strategy.25 We have (assuming S0 ≥ K and D > S0 − K): fT = S0 − ST + 2 × (ST − K)+ − D (111) S∗up = 2 × K − S0 + D (112) S∗down = S0 − D (113) Pmax = unlimited (114) Lmax = D − (S0 − K) (115)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.29",
+    "title": "Long put synthetic straddle",
+    "page": 28,
+    "slug": "long_put_synthetic_straddle",
+    "equations": [
+      "116",
+      "117",
+      "118",
+      "119",
+      "120"
+    ],
+    "summary": "2.29 Strategy: Long put synthetic straddle This volatility strategy (which is the same as a long straddle with the call replaced by a synthetic call) amounts to buying stock and buying two ATM (or the nearest ITM) put options with a strike price K. The trader’s outlook is neutral. This is a capital gain strategy. We have (assuming S0 ≤ K and D > K − S0 ): fT = ST − S0 + 2 × (K − ST )+ − D (116) S∗up = S0 + D (117) S∗down = 2 × K − S0 − D (118) Pmax = unlimited (119) Lmax = D − (K − S0 ) (120)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.30",
+    "title": "Short call synthetic straddle",
+    "page": 28,
+    "slug": "short_call_synthetic_straddle",
+    "equations": [
+      "121",
+      "122",
+      "123",
+      "124",
+      "125"
+    ],
+    "summary": "2.30 Strategy: Short call synthetic straddle This sideways strategy (which is the same as a short straddle with the put replaced by a synthetic put) amounts to buying stock and selling two ATM (or the nearest 24 Similarly to long guts, here we assume that C > K2 − K1 . 25 Academic literature on synthetic straddles appears to be scarce. See, e.g., [Trifonov et al, 2011], [Trifonov et al, 2014]. 28 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved. OTM) call options with a strike price K. The trader’s outlook is neutral. This is a capital gain strategy. We have (assuming S0 ≤ K): fT = ST − S0 − 2 × (ST − K)+ + C (121) S∗up = 2 × K − S0 + C (122) S∗down = S0 − C (123) Pmax = K − S0 + C (124) Lmax = unlimited (125)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.31",
+    "title": "Short put synthetic straddle",
+    "page": 29,
+    "slug": "short_put_synthetic_straddle",
+    "equations": [
+      "126",
+      "127",
+      "128",
+      "129",
+      "130"
+    ],
+    "summary": "2.31 Strategy: Short put synthetic straddle This sideways strategy (which is the same as a short straddle with the call replaced by a synthetic call) amounts to shorting stock and selling two ATM (or the nearest OTM) put options with a strike price K. The trader’s outlook is neutral. This is a capital gain strategy. We have (assuming S0 ≥ K): fT = S0 − ST − 2 × (K − ST )+ + C (126) S∗up = S0 + C (127) S∗down = 2 × K − S0 − C (128) Pmax = S0 − K + C (129) Lmax = unlimited (130)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.32",
+    "title": "Covered short straddle",
+    "page": 29,
+    "slug": "covered_short_straddle",
+    "equations": [
+      "131",
+      "132",
+      "133",
+      "134"
+    ],
+    "summary": "2.32 Strategy: Covered short straddle This strategy amounts to augmenting a covered call by writing a put option with the same strike price K and TTM as the sold call option and thereby increasing the income. The trader’s outlook is bullish. We have: fT = ST − S0 − (ST − K)+ − (K − ST )+ + C (131) 1 S∗ = (S0 + K − C) (132) 2 Pmax = K − S0 + C (133) Lmax = S0 + K − C (134)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.33",
+    "title": "Covered short strangle",
+    "page": 29,
+    "slug": "covered_short_strangle",
+    "equations": [
+      "135",
+      "136",
+      "137"
+    ],
+    "summary": "2.33 Strategy: Covered short strangle This strategy amounts to augmenting a covered call by writing an OTM put option with a strike price K 0 and the same TTM as the sold call option (whose strike price is K) and thereby increasing the income. The trader’s outlook is bullish. We have: fT = ST − S0 − (ST − K)+ − (K 0 − ST )+ + C (135) Pmax = K − S0 + C (136) Lmax = S0 + K 0 − C (137) 29 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved."
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.34",
+    "title": "Strap",
+    "page": 30,
+    "slug": "strap",
+    "equations": [
+      "138",
+      "139",
+      "140",
+      "141",
+      "142"
+    ],
+    "summary": "2.34 Strategy: Strap This is a volatility strategy consisting of a long position in two ATM call options, and a long position in an ATM put option with a strike price K. This is a net debit trade. The trader’s outlook is bullish. This is a capital gain strategy. We have:26 fT = 2 × (ST − K)+ + (K − ST )+ − D (138) D S∗up = K + (139) 2 S∗down = K − D (140) Pmax = unlimited (141) Lmax = D (142)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.35",
+    "title": "Strip",
+    "page": 30,
+    "slug": "strip",
+    "equations": [
+      "143",
+      "144",
+      "145",
+      "146",
+      "147"
+    ],
+    "summary": "2.35 Strategy: Strip This is a volatility strategy consisting of a long position in an ATM call option, and a long position in two ATM put options with a strike price K. This is a net debit trade. The trader’s outlook is bearish. This is a capital gain strategy. We have: fT = (ST − K)+ + 2 × (K − ST )+ − D (143) S∗up = K + D (144) D S∗down = K − (145) 2 Pmax = unlimited (146) Lmax = D (147)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.36",
+    "title": "Call ratio backspread",
+    "page": 30,
+    "slug": "call_ratio_backspread",
+    "equations": [
+      "148",
+      "149",
+      "150",
+      "151",
+      "152"
+    ],
+    "summary": "2.36 Strategy: Call ratio backspread This strategy consists of a short position in NS close to ATM call options with a strike price K1 , and a long position in NL OTM call options with a strike price K2 , where NL > NS . Typically, NL = 2 and NS = 1, or NL = 3 and NS = 2. The trader’s outlook is strongly bullish. This is a capital gain strategy. We have:27 fT = NL × (ST − K2 )+ − NS × (ST − K1 )+ − H (148) S∗down = K1 − H/NS , H < 0 (149) S∗up = (NL × K2 − NS × K1 + H)/(NL − NS ) (150) Pmax = unlimited (151) Lmax = NS × (K2 − K1 ) + H (152) 26 For some literature on strip and strap strategies, see, e.g., [Jha and Kalimipal, 2010], [Topaloglou, Vladimirou and Zenios, 2011]. 27 For some literature on call/put ratio (back)spreads, see, e.g., [Augustin, Brenner and Subrah- manyam, 2015], [Chaput and Ederington, 2008], [Šoltés, 2010], [Šoltés and Amaitiek, 2010b], [Šoltés and"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.37",
+    "title": "Put ratio backspread",
+    "page": 31,
+    "slug": "put_ratio_backspread",
+    "equations": [
+      "153",
+      "154",
+      "155",
+      "156",
+      "157"
+    ],
+    "summary": "2.37 Strategy: Put ratio backspread This strategy consists of a short position in NS close to ATM put options with a strike price K1 , and a long position in NL OTM put options with a strike price K2 , where NL > NS . Typically, NL = 2 and NS = 1, or NL = 3 and NS = 2. The trader’s outlook is strongly bearish. This is a capital gain strategy. We have: fT = NL × (K2 − ST )+ − NS × (K1 − ST )+ − H (153) S∗up = K1 + H/NS , H < 0 (154) S∗down = (NL × K2 − NS × K1 − H)/(NL − NS ) (155) Pmax = NL × K2 − NS × K1 − H (156) Lmax = NS × (K1 − K2 ) + H (157)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.38",
+    "title": "Ratio call spread",
+    "page": 31,
+    "slug": "ratio_call_spread",
+    "equations": [
+      "158",
+      "159",
+      "160",
+      "161",
+      "162"
+    ],
+    "summary": "2.38 Strategy: Ratio call spread This strategy consists of a short position in NS close to ATM call options with a strike price K1 , and a long position in NL ITM call options with a strike price K2 , where NL < NS . Typically, NL = 1 and NS = 2, or NL = 2 and NS = 3. This is an income strategy if it is structured as a net credit trade. The trader’s outlook is neutral to bearish. We have:28 fT = NL × (ST − K2 )+ − NS × (ST − K1 )+ − H (158) S∗down = K2 + H/NL , H > 0 (159) S∗up = (NS × K1 − NL × K2 − H)/(NS − NL ) (160) Pmax = NL × (K1 − K2 ) − H (161) Lmax = unlimited (162)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.39",
+    "title": "Ratio put spread",
+    "page": 31,
+    "slug": "ratio_put_spread",
+    "equations": [
+      "163",
+      "164",
+      "165",
+      "166",
+      "167"
+    ],
+    "summary": "2.39 Strategy: Ratio put spread This strategy consists of a short position in NS close to ATM put options with a strike price K1 , and a long position in NL ITM put options with a strike price K2 , where NL < NS . Typically, NL = 1 and NS = 2, or NL = 2 and NS = 3. This is an income strategy if it is structured as a net credit trade. The trader’s outlook is neutral to bullish. We have: fT = NL × (K2 − ST )+ − NS × (K1 − ST )+ − H (163) S∗up = K2 − H/NL , H > 0 (164) S∗down = (NS × K1 − NL × K2 + H)/(NS − NL ) (165) Pmax = NL × (K2 − K1 ) − H (166) Lmax = NS × K1 − NL × K2 + H (167) 28 So, the difference between call/put ratio backspreads and ratio call/put spreads is that in the former NL > NS , while in the latter NL < NS . 31 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved."
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.40",
+    "title": "Long call butterfly",
+    "page": 32,
+    "slug": "long_call_butterfly",
+    "equations": [
+      "168",
+      "169",
+      "170",
+      "171",
+      "172"
+    ],
+    "summary": "2.40 Strategy: Long call butterfly This is a sideways strategy consisting of a long position in an OTM call option with a strike price K1 , a short position in two ATM call options with a strike price K2 , and a long position in an ITM call option with a strike price K3 . The strikes are equidistant: K2 − K3 = K1 − K2 = κ. This is a relatively low cost net debit trade. The trader’s outlook is neutral. This is a capital gain strategy. We have:29 fT = (ST − K1 )+ + (ST − K3 )+ − 2 × (ST − K2 )+ − D (168) S∗down = K3 + D (169) S∗up = K1 − D (170) Pmax = κ − D (171) Lmax = D (172)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.40.1",
+    "title": "Modified call butterfly",
+    "page": 32,
+    "slug": "modified_call_butterfly",
+    "equations": [
+      "173",
+      "174",
+      "175",
+      "176"
+    ],
+    "summary": "2.40.1 Strategy: Modified call butterfly This is a variation of the long call butterfly strategy where the strikes are no longer equidistant; instead we have K1 − K2 < K2 − K3 . This results in a sideways strategy with a bullish bias. We have: fT = (ST − K1 )+ + (ST − K3 )+ − 2 × (ST − K2 )+ − D (173) S∗ = K3 + D (174) Pmax = K2 − K3 − D (175) Lmax = D (176)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.41",
+    "title": "Long put butterfly",
+    "page": 32,
+    "slug": "long_put_butterfly",
+    "equations": [
+      "177",
+      "178",
+      "179",
+      "180",
+      "181"
+    ],
+    "summary": "2.41 Strategy: Long put butterfly This is a sideways strategy consisting of a long position in an OTM put option with a strike price K1 , a short position in two ATM put options with a strike price K2 , and a long position in an ITM put option with a strike price K3 . The strikes are equidistant: K3 − K2 = K2 − K1 = κ. This is a relatively low cost net debit trade. The trader’s outlook is neutral. This is a capital gain strategy. We have: fT = (K1 − ST )+ + (K3 − ST )+ − 2 × (K2 − ST )+ − D (177) S∗up = K3 − D (178) S∗down = K1 + D (179) Pmax = κ − D (180) Lmax = D (181) 29 For some literature on butterfly spreads (including iron butterflies), see, e.g., [Balbás, Lon- garela and Lucia, 1999], [Howison, Reisinger and Witte, 2013], [Jongadsayakul, 2017], [Matsypura and Timkovsky, 2010], [Youbi, Pindza and Maré, 2017], [Wolf, 2014], [Wystup, 2017]. Academic literature on condor"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.41.1",
+    "title": "Modified put butterfly",
+    "page": 33,
+    "slug": "modified_put_butterfly",
+    "equations": [
+      "182",
+      "183",
+      "184",
+      "185"
+    ],
+    "summary": "2.41.1 Strategy: Modified put butterfly This is a variation of the long put butterfly strategy where the strikes are no longer equidistant; instead we have K3 − K2 < K2 − K1 . This results in a sideways strategy with a bullish bias. We have (for H > 0 there is also S∗up = K3 − H):30 fT = (K1 − ST )+ + (K3 − ST )+ − 2 × (K2 − ST )+ − H (182) S∗down = 2 × K2 − K3 + H (183) Pmax = K3 − K2 − H (184) Lmax = 2 × K2 − K1 − K3 + H (185)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.42",
+    "title": "Short call butterfly",
+    "page": 33,
+    "slug": "short_call_butterfly",
+    "equations": [
+      "186",
+      "187",
+      "188",
+      "189",
+      "190"
+    ],
+    "summary": "2.42 Strategy: Short call butterfly This is a volatility strategy consisting of a short position in an ITM call option with a strike price K1 , a long position in two ATM call options with a strike price K2 , and a short position in an OTM call option with a strike price K3 . The strikes are equidistant: K3 − K2 = K2 − K1 = κ. This is a net credit trade. In this sense, this is an income strategy. However, the potential reward is sizably smaller than with a short straddle or a short strangle (albeit with a lower risk). The trader’s outlook is neutral. We have: fT = 2 × (ST − K2 )+ − (ST − K1 )+ − (ST − K3 )+ + C (186) S∗up = K3 − C (187) S∗down = K1 + C (188) Pmax = C (189) Lmax = κ − C (190)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.43",
+    "title": "Short put butterfly",
+    "page": 33,
+    "slug": "short_put_butterfly",
+    "equations": [
+      "191",
+      "192",
+      "193",
+      "194",
+      "195"
+    ],
+    "summary": "2.43 Strategy: Short put butterfly This is a volatility strategy consisting of a short position in an ITM put option with a strike price K1 , a long position in two ATM put options with a strike price K2 , and a short position in an OTM put option with a strike price K3 . The strikes are equidistant: K2 − K3 = K1 − K2 = κ. This is a net credit trade. In this sense, this is an income strategy. However, the potential reward is sizably smaller than with a short straddle or a short strangle (albeit with a lower risk). The trader’s outlook is neutral. We have: fT = 2 × (K2 − ST )+ − (K1 − ST )+ − (K3 − ST )+ + C (191) S∗down = K3 + C (192) S∗up = K1 − C (193) Pmax = C (194) Lmax = κ − C (195) 30 Ideally, this should be structured as a net credit trade, albeit this may not always be possible. 33 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.44",
+    "title": "“Long” iron butterfly",
+    "page": 34,
+    "slug": "long_iron_butterfly",
+    "equations": [
+      "196",
+      "197",
+      "198",
+      "199",
+      "200"
+    ],
+    "summary": "2.44 Strategy: “Long” iron butterfly This sideways strategy is a combination of a bull put spread and a bear call spread and consists of a long position in an OTM put option with a strike price K1 , a short position in an ATM put option and an ATM call option with a strike price K2 , and a long position in an OTM call option with a strike price K3 . The strikes are equidistant: K2 − K1 = K3 − K2 = κ. This is a net credit trade. The trader’s outlook is neutral. This is an income strategy. We have: fT = (K1 − ST )+ − (K2 − ST )+ − (ST − K2 )+ + (ST − K3 )+ + C (196) S∗up = K2 + C (197) S∗down = K2 − C (198) Pmax = C (199) Lmax = κ − C (200)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.45",
+    "title": "“Short” iron butterfly",
+    "page": 34,
+    "slug": "short_iron_butterfly",
+    "equations": [
+      "201",
+      "202",
+      "203",
+      "204",
+      "205"
+    ],
+    "summary": "2.45 Strategy: “Short” iron butterfly This volatility strategy is a combination of a bear put spread and a bull call spread and consists of a short position in an OTM put option with a strike price K1 , a long position in an ATM put option and an ATM call option with a strike price K2 , and a short position in an OTM call option with a strike price K3 . The strikes are equidistant: K2 − K1 = K3 − K2 = κ. This is a net debit trade. The trader’s outlook is neutral. This is a capital gain strategy. We have: fT = (K2 − ST )+ + (ST − K2 )+ − (K1 − ST )+ − (ST − K3 )+ − D (201) S∗up = K2 + D (202) S∗down = K2 − D (203) Pmax = κ − D (204) Lmax = D (205)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.46",
+    "title": "Long call condor",
+    "page": 34,
+    "slug": "long_call_condor",
+    "equations": [
+      "206",
+      "207",
+      "208",
+      "209",
+      "210"
+    ],
+    "summary": "2.46 Strategy: Long call condor This is a sideways strategy consisting of a long position in an ITM call option with a strike price K1 , a short position in an ITM call option with a higher strike price K2 , a short position in an OTM call option with a strike price K3 , and a long position in an OTM call option with a higher strike price K4 . All strikes are equidistant: K4 − K3 = K3 − K2 = K2 − K1 = κ. This is a relatively low cost net debit trade. The trader’s outlook is neutral. This is a capital gain strategy. We have: fT = (ST − K1 )+ − (ST − K2 )+ − (ST − K3 )+ + (ST − K4 )+ − D (206) S∗up = K4 − D (207) S∗down = K1 + D (208) 34 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved. Pmax = κ − D (209) Lmax = D (210)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.47",
+    "title": "Long put condor",
+    "page": 35,
+    "slug": "long_put_condor",
+    "equations": [
+      "211",
+      "212",
+      "213",
+      "214",
+      "215"
+    ],
+    "summary": "2.47 Strategy: Long put condor This is a sideways strategy consisting of a long position in an OTM put option with a strike price K1 , a short position in an OTM put option with a higher strike price K2 , a short position in an ITM put option with a strike price K3 , and a long position in an ITM put option with a higher strike price K4 . All strikes are equidistant: K4 − K3 = K3 − K2 = K2 − K1 = κ. This is a relatively low cost net debit trade. The trader’s outlook is neutral. This is a capital gain strategy. We have: fT = (K1 − ST )+ − (K2 − ST )+ − (K3 − ST )+ + (K4 − ST )+ − D (211) S∗up = K4 − D (212) S∗down = K1 + D (213) Pmax = κ − D (214) Lmax = D (215)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.48",
+    "title": "Short call condor",
+    "page": 35,
+    "slug": "short_call_condor",
+    "equations": [
+      "216",
+      "217",
+      "218",
+      "219",
+      "220"
+    ],
+    "summary": "2.48 Strategy: Short call condor This is a volatility strategy consisting of a short position in an ITM call option with a strike price K1 , a long position in an ITM call option with a higher strike price K2 , a long position in an OTM call option with a strike price K3 , and a short position in an OTM call option with a higher strike price K4 . All strikes are equidistant: K4 − K3 = K3 − K2 = K2 − K1 = κ. This is a relatively low net credit trade. As with a short call butterfly, the potential reward is sizably smaller than with a short straddle or a short strangle (albeit with a lower risk). So, this is a capital gain (rather than an income) strategy. The trader’s outlook is neutral. We have: fT = (ST − K2 )+ + (ST − K3 )+ − (ST − K1 )+ − (ST − K4 )+ + C (216) S∗up = K4 − C (217) S∗down = K1 + C (218) Pmax = C (219) Lmax = κ − C (220)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.49",
+    "title": "Short put condor",
+    "page": 35,
+    "slug": "short_put_condor",
+    "equations": [
+      "221",
+      "222",
+      "223",
+      "224",
+      "225"
+    ],
+    "summary": "2.49 Strategy: Short put condor This is a volatility strategy consisting of a short position in an OTM put option with a strike price K1 , a long position in an OTM put option with a higher strike price K2 , a long position in an ITM put option with a strike price K3 , and a short position in an ITM put option with a higher strike price K4 . All strikes are equidistant: K4 − K3 = K3 − K2 = K2 − K1 = κ. This is a relatively low net credit trade. 35 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved. As with a short put butterfly, the potential reward is sizably smaller than with a short straddle or a short strangle (albeit with a lower risk). So, this is a capital gain (rather than an income) strategy. The trader’s outlook is neutral. We have: fT = (K2 − ST )+ + (K3 − ST )+ − (K1 − ST )+ − (K4 − ST"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.50",
+    "title": "Long iron condor",
+    "page": 36,
+    "slug": "long_iron_condor",
+    "equations": [
+      "226",
+      "227",
+      "228",
+      "229",
+      "230"
+    ],
+    "summary": "2.50 Strategy: Long iron condor This sideways strategy is a combination of a bull put spread and a bear call spread and consists of a long position in an OTM put option with a strike price K1 , a short position in an OTM put option with a higher strike price K2 , a short position in an OTM call option with a strike price K3 , and a long position in an OTM call option with a higher strike price K4 . The strikes are equidistant: K4 − K3 = K3 − K2 = K2 − K1 = κ. This is a net credit trade. The trader’s outlook is neutral. This is an income strategy. We have: fT = (K1 − ST )+ + (ST − K4 )+ − (K2 − ST )+ − (ST − K3 )+ + C (226) S∗up = K3 + C (227) S∗down = K2 − C (228) Pmax = C (229) Lmax = κ − C (230)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.51",
+    "title": "Short iron condor",
+    "page": 36,
+    "slug": "short_iron_condor",
+    "equations": [
+      "231",
+      "232",
+      "233",
+      "234",
+      "235"
+    ],
+    "summary": "2.51 Strategy: Short iron condor This volatility strategy is a combination of a bear put spread and a bull call spread and consists of a short position in an OTM put option with a strike price K1 , a long position in an OTM put option with a higher strike price K2 , a long position in an OTM call option with a strike price K3 , and a short position in an OTM call option with a higher strike price K4 . The strikes are equidistant: K4 − K3 = K3 − K2 = K2 − K1 = κ. This is a net debit trade. The trader’s outlook is neutral. This is a capital gain strategy. We have: fT = (K2 − ST )+ + (ST − K3 )+ − (K1 − ST )+ − (ST − K4 )+ − D (231) S∗up = K3 + D (232) S∗down = K2 − D (233) Pmax = κ − D (234) Lmax = D (235) 36 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved."
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.52",
+    "title": "Long box",
+    "page": 37,
+    "slug": "long_box",
+    "equations": [
+      "236",
+      "237"
+    ],
+    "summary": "2.52 Strategy: Long box This volatility strategy can be viewed as a combination of a long synthetic forward and a short synthetic forward, or as a combination of a bull call spread and a bear put spread, and consists of a long position in an ITM put option with a strike price K1 , a short position in an OTM put option with a lower strike price K2 , a long position in an ITM call option with the strike price K2 , and a short position in an OTM call option with the strike price K1 . The trader’s outlook is neutral. This is a capital gain strategy.31 We have (assuming K1 ≥ K2 + D): fT = (K1 − ST )+ − (K2 − ST )+ + (ST − K2 )+ − (ST − K1 )+ − D = K1 − K 2 − D (236) Pmax = (K1 − K2 ) − D (237)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.53",
+    "title": "Collar",
+    "page": 37,
+    "slug": "collar",
+    "equations": [
+      "238",
+      "239",
+      "240",
+      "241"
+    ],
+    "summary": "2.53 Strategy: Collar This strategy (a.k.a. “fence”) is a covered call augmented by a long put option as insurance against the stock price falling.32 It amounts to buying stock, buying an OTM put option with a strike price K1 , and selling an OTM call option with a higher strike price K2 . The trader’s outlook is moderately bullish. This is a capital gain strategy. We have:33 fT = ST − S0 + (K1 − ST )+ − (ST − K2 )+ − H (238) S∗ = S0 + H (239) Pmax = K2 − S0 − H (240) Lmax = S0 − K1 + H (241)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.54",
+    "title": "Bullish short seagull spread",
+    "page": 37,
+    "slug": "bullish_short_seagull_spread",
+    "equations": [
+      "242",
+      "243",
+      "244",
+      "245",
+      "246",
+      "247"
+    ],
+    "summary": "2.54 Strategy: Bullish short seagull spread This option trading strategy is a bull call spread financed with a sale of an OTM put option. It amounts to a short position in an OTM put option with a strike price K1 , a long position in an ATM call option with a strike price K2 , and a short position in an OTM call option with a strike price K3 . Ideally, the trade should be structured to have zero cost. The trader’s outlook is bullish. This is a capital gain 31 In some cases it can be used as a tax strategy – see, e.g., [Cohen, 2005]. For some literature on box option strategies, see, e.g., [BenZion, Anan and Yagil, 2005], [Bharadwaj and Wiggins, 2001], [Billingsley and Chance, 1985], [Clarke, de Silva and Thorley, 2013], [Fung, Mok and Wong, 2004], [Hemler and Miller, 1997], [Jongadsayakul, 2016], [Ronn and Ronn, 1989], [Vipul, 2009]. 32 Similarly, a short collar is a covered put"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.55",
+    "title": "Bearish long seagull spread",
+    "page": 38,
+    "slug": "bearish_long_seagull_spread",
+    "equations": [
+      "248",
+      "249",
+      "250",
+      "251",
+      "252",
+      "253"
+    ],
+    "summary": "2.55 Strategy: Bearish long seagull spread This option trading strategy is a short combo (short risk reversal) hedged against the stock price rising by buying an OTM call option. It amounts to a long position in an OTM put option with a strike price K1 , a short position in an ATM call option with a strike price K2 , and a long position in an OTM call option with a strike price K3 . Ideally, the trade should be structured to have zero cost. The trader’s outlook is bearish. This is a capital gain strategy. We have: fT = (K1 − ST )+ − (ST − K2 )+ + (ST − K3 )+ − H (248) S∗ = K1 − H, H > 0 (249) S∗ = K2 − H, H < 0 (250) K1 ≤ S∗ ≤ K2 , H = 0 (251) Pmax = K1 − H (252) Lmax = K3 − K2 + H (253)"
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.56",
+    "title": "Bearish short seagull spread",
+    "page": 38,
+    "slug": "bearish_short_seagull_spread",
+    "equations": [
+      "254",
+      "255",
+      "256",
+      "257",
+      "258",
+      "259"
+    ],
+    "summary": "2.56 Strategy: Bearish short seagull spread This option trading strategy is a bear put spread financed with a sale of an OTM call option. It amounts to a short position in an OTM put option with a strike price K1 , a long position in an ATM put option with a strike price K2 , and a short position in an OTM call option with a strike price K3 . Ideally, the trade should be structured to have zero cost. The trader’s outlook is bearish. This is a capital gain strategy. We have: fT = −(K1 − ST )+ + (K2 − ST )+ − (ST − K3 )+ − H (254) S∗ = K2 − H, H > 0 (255) S∗ = K3 − H, H < 0 (256) K2 ≤ S ∗ ≤ K3 , H = 0 (257) Pmax = K2 − K1 − H (258) Lmax = unlimited (259) 34 Academic literature on seagull spreads appears to be scarce. For a book reference, see, e.g., [Wystup, 2017]. 38 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur."
+  },
+  {
+    "chapter": 2,
+    "folder": "options",
+    "section": "2.57",
+    "title": "Bullish long seagull spread",
+    "page": 39,
+    "slug": "bullish_long_seagull_spread",
+    "equations": [
+      "260",
+      "261",
+      "262",
+      "263",
+      "264",
+      "265"
+    ],
+    "summary": "2.57 Strategy: Bullish long seagull spread This option trading strategy is a long combo (long risk reversal) hedged against the stock price falling by buying an OTM put option. It amounts to a long position in an OTM put option with a strike price K1 , a short position in an ATM put option with a strike price K2 , and a long position in an OTM call option with a strike price K3 . Ideally, the trade should be structured to have zero cost. The trader’s outlook is bullish. This is a capital gain strategy. We have: fT = (K1 − ST )+ − (K2 − ST )+ + (ST − K3 )+ − H (260) S∗ = K3 + H, H > 0 (261) S∗ = K2 + H, H < 0 (262) K2 ≤ S∗ ≤ K3 , H = 0 (263) Pmax = unlimited (264) Lmax = K2 − K1 + H (265) 39 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved. 3 Stocks"
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.1",
+    "title": "Price-momentum",
+    "page": 40,
+    "slug": "price_momentum",
+    "equations": [
+      "266",
+      "267",
+      "268",
+      "269",
+      "270",
+      "271",
+      "0",
+      "272",
+      "273"
+    ],
+    "summary": "Empirically, there appears to be certain “inertia” in stock returns known as the momentum effect, whereby future returns are positively correlated with past returns (see, e.g., [Asness, 1994], [Asness et al, 2014], [Asness, Moskowitz and Pedersen, 2013], [Grinblatt and Moskowitz, 2004], [Jegadeesh and Titman, 1993]). Let t denote time measured in the units of 1 month, with t = 0 corresponding to the most recent time. Let Pi (t) be the time series of prices (fully adjusted for splits and dividends) for the stock labeled by i (i = 1, . . . , N , where N is the number of stocks in the trading universe). Let Pi (t) Ri (t) = −1 (266) Pi (t + 1) Pi (S) Ricum = −1 (267) Pi (S + T ) S+T −1 mean 1 X Ri = Ri (t) (268) T t=S Rimean Ririsk.adj = (269) σi 1 X−1 S+T σi2 = (Ri (t) − Rimean )2 (270) T − 1 t=S Here: Ri (t) is the monthly return; Ricum is the cumulative return computed over the T -month"
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.2",
+    "title": "Earnings-momentum",
+    "page": 41,
+    "slug": "earnings_momentum",
+    "equations": [
+      "0",
+      "274"
+    ],
+    "summary": "3.2 Strategy: Earnings-momentum This strategy amounts to buying winners and selling losers as in the price-momentum strategy, but the selection criterion is based on earnings. One way to define such a 37 Albeit, e.g., a long-only portfolio may have to be liquidated before the end of this holding period due to unforeseen events, such as market crashes. 38 That is, assuming the stock is bought at the price Pi (0), which does not account for slippage. 39 For dollar-neutral portfolios IL = IS and I = 2 × IL . 40 For some additional literature on momentum strategies, see, e.g., [Antonacci, 2017], [Asem and Tian, 2010], [Barroso and Santa-Clara, 2014], [Bhojraj and Swaminathan, 2006], [Chordia and Shivakumar, 2002], [Chuang and Ho, 2014], [Cooper, Gutierrez and Hameed, 2004], [Daniel and Moskowitz, 2016], [Géczy and Samonov, 2016], [Griffin, Ji and Martin, 2003], [Grundy and Martin, 2001],"
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.3",
+    "title": "Value",
+    "page": 42,
+    "slug": "value",
+    "equations": [],
+    "summary": "3.3 Strategy: Value This strategy amounts to buying winners and selling losers as in the price-momentum and earnings-momentum strategies, but the selection criterion is based on value. Value can be defined as the Book-to-Price (B/P) ratio (see, e.g., [Rosenberg, Reid and Lanstein, 1985]). Here “Book” is the company’s book value per share outstand- ing (so the B/P ratio is the same as the Book-to-Market ratio, where now “Book” stands for its total book value, not per share outstanding, and “Market” is its market capitalization). The trader can, e.g., construct a zero-cost portfolio by buying stocks in the top decile by the B/P ratio, and shorting stocks in the bottom decile. There can be variations in the definition of the B/P ratio. Thus, e.g., [Asness, Moskowitz and Pedersen, 2013] uses current (i.e., most up-to-date) prices, while [Fama and French, 1992] and some others use prices"
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.4",
+    "title": "Low-volatility anomaly",
+    "page": 42,
+    "slug": "low_volatility_anomaly",
+    "equations": [
+      "270"
+    ],
+    "summary": "3.4 Strategy: Low-volatility anomaly This strategy is based on the empirical observation that future returns of previously low-return-volatility portfolios outperform those of previously high-return-volatility portfolios,44 which goes counter to the “naı̈ve” expectation that higher risk assets 41 Also see, e.g., [Bartov, Radhakrishnan and Krinsky, 2005], [Battalio and Mendenhall, 2007], [Bernard and Thomas, 1989], [Bernard and Thomas, 1990], [Bhushan, 1994], [Chordia et al, 2009], [Chordia and Shivakumar, 2006], [Czaja, Kaufmann and Scholz, 2013], [Doyle, Lundholm and Soliman, 2006], [Foster, Olsen and Shevlin, 1984], [Hew et al, 1996], [Hirshleifer, Lim and Teoh, 2009], [Jansen and Nikiforov, 2016], [Livnat and Mendenhall, 2006], [Loh and Warachka, 2012], [Mendenhall, 2004], [Ng, Rusticus and Verdi, 2008], [Rendleman, Jones and Latané, 1982], [Stickel, 1991], [Watts, 1978]. 42"
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.5",
+    "title": "Implied volatility",
+    "page": 43,
+    "slug": "implied_volatility",
+    "equations": [],
+    "summary": "3.5 Strategy: Implied volatility This strategy is based on the empirical observation that stocks with larger increases in call implied volatilities over the previous month on average have higher future re- turns, while stocks with larger increases in put implied volatilities over the previous month on average have lower future returns (see, e.g., [An et al, 2014], [Chen, Chung and Tsai, 2016]).45 Therefore, the trader can, e.g., construct a dollar-neutral portfo- lio by buying stocks in the top decile by the increase in call implied volatilities, and shorting stocks in the top decile by the increase in put implied volatilities. One can also consider variations, e.g., buying stocks in the top decile by the difference twixt the change in call implied volatilities and the change in put implied volatilities."
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.6",
+    "title": "Multifactor portfolio",
+    "page": 43,
+    "slug": "multifactor_portfolio",
+    "equations": [
+      "275",
+      "276",
+      "277"
+    ],
+    "summary": "3.6 Strategy: Multifactor portfolio This strategy amounts to buying and shorting stocks based on multiple factors such as value, momentum, etc. For instance, usually value and momentum are negatively correlated and combining them can add value (see, e.g., [Asness, Moskowitz and Pedersen, 2013]). There is a variety of ways in which F > 1 factors can be com- bined.46 The simplest way is to diversify the exposure to the F factors with some weights wA , where A = 1, . . . , F labels the factors. That is, if I is the total invest- ment level, then the F portfolios (each built as above based on the corresponding factor) are allocated the investment levels IA = wA ×I, where (assuming all wA > 0) F X wA = 1 (275) A=1 Thus, one can simply take uniform weights wA = 1/F , albeit this may not be the most optimal weighting scheme. E.g., similarly to Subsection 3.1, there are weighting Thorley,"
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.7",
+    "title": "Residual momentum",
+    "page": 44,
+    "slug": "residual_momentum",
+    "equations": [
+      "278",
+      "279",
+      "280",
+      "281",
+      "282"
+    ],
+    "summary": "3.7 Strategy: Residual momentum This is the same as the price-momentum strategy with the stock returns Ri (t) re- placed by the residuals \u000fi (t) of a serial regression of the stock returns Ri (t) over, e.g., the 3 Fama-French factors MKT(t), SMB(t), HML(t),50 with the intercept (see, 47 Another approach is to fix the weights wA by optimizing a portfolio of the F expected returns corresponding to the F factors (using an invertible F × F covariance matrix for these returns). 48 These two ways generally do not produce the same resultant portfolios. 49 For additional literature on multifactor strategies, see, e.g., [Amenc et al, 2016], [Amenc et al, 2015], [Arnott et al, 2013], [Asness, 1997], [Barber, Bennett and Gvozdeva, 2015], [Cochrane, 1999], [Fama, 1996], [Grinold and Kahn, 2000], [Hsu, Lin and Vincent, 2018], [Kahn and Lemmon, 2015], [Kahn and Lemmon, 2016], [Kozlov and Petajisto,"
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.8",
+    "title": "Pairs trading",
+    "page": 45,
+    "slug": "pairs_trading",
+    "equations": [
+      "283",
+      "284",
+      "285",
+      "286",
+      "287",
+      "288",
+      "289",
+      "290",
+      "291"
+    ],
+    "summary": "3.8 Strategy: Pairs trading This dollar-neutral strategy amounts to identifying a pair of historically highly corre- lated stocks (call them stock A and stock B) and, when a mispricing (i.e., a deviation from the high historical correlation) occurs, shorting the “rich” stock and buying the “cheap” stock. This is an example of a mean-reversion strategy. Let PA (t1 ) and PB (t1 ) be the prices of stock A and stock B at time t1 , and let PA (t2 ) and PB (t2 ) be the prices of stock A and stock B at a later time t2 . All prices are fully adjusted for any splits and dividends. The corresponding returns (from t1 to t2 ) are PA (t2 ) RA = −1 (283) PA (t1 ) PB (t2 ) RB = −1 (284) PB (t1 ) 51 For some additional literature related to the residual momentum strategy, see, e.g., [Blitz et al, 2013], [Chang et al, 2016], [Chaves, 2012], [Chuang, 2015], [Grundy and Martin, 2001], [Gutierrez and"
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.9",
+    "title": "Mean-reversion – single cluster",
+    "page": 46,
+    "slug": "mean_reversion_single_cluster",
+    "equations": [
+      "292",
+      "293",
+      "294",
+      "295",
+      "296",
+      "297",
+      "298"
+    ],
+    "summary": "3.9 Strategy: Mean-reversion – single cluster This is a generalization of the pairs trading strategy to N > 2 stocks that are historically highly correlated (e.g., stocks belonging to the same industry or sector). Let Ri , i = 1, . . . , N , be the returns for these N stocks: \u0012 \u0013 Pi (t2 ) Ri = ln (292) Pi (t1 ) N 1 X R= Ri (293) N i=1 ei = Ri − R R (294) 52 For some literature on pairs trading, see, e.g., [Bogomolov, 2013], [Bowen and Hutchinson, 2016], [Bowen, Hutchinson and O’Sullivan, 2010], [Caldeira and Moura, 2013], [Chen et al, 2017], [Do and Faff, 2010], [Do and Faff, 2012], [Elliott, Van Der Hoek and Malcolm, 2005], [Engle and Granger, 1987], [Gatev, Goetzmann and Rouwenhorst, 2006], [Huck, 2009], [Huck, 2015], [Huck and Afawubo, 2014], [Jacobs and Weber, 2015], [Kakushadze, 2015b], [Kim, 2011], [Kishore, 2012], [Krauss, 2017], [Krauss and Stübinger, 2017], [Liew and Wu,"
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.9.1",
+    "title": "Mean-reversion – multiple clusters",
+    "page": 47,
+    "slug": "mean_reversion_multiple_clusters",
+    "equations": [
+      "299",
+      "300",
+      "301",
+      "302",
+      "303",
+      "304",
+      "305",
+      "306",
+      "307",
+      "308",
+      "309",
+      "310",
+      "297",
+      "296",
+      "311",
+      "312"
+    ],
+    "summary": "3.9.1 Strategy: Mean-reversion – multiple clusters The mean-reversion strategy of Subsection 3.9 can be readily generalized to the case where we have K > 1 clusters such that stocks within each cluster are historically highly correlated.53 We can simply treat clusters independently from each other and construct a mean-reversion strategy following the above procedure in each cluster. Then, e.g., we can allocate investments to these K independent strategies uniformly. There is a neat way of treating all clusters in a “unified” fashion using a linear regression. Let the K clusters be labeled by A = 1, . . . , K. Let ΛiA be an N × K matrix such that if the stock labeled by i (i = 1, . . . , N ) belongs to the cluster labeled by A, then ΛiA = 1; otherwise, ΛiA = 0. We will assume that each and every stock belongs to one and only one cluster (so there are no empty clusters): N X NA = ΛiA > 0"
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.10",
+    "title": "Mean-reversion – weighted regression",
+    "page": 49,
+    "slug": "mean_reversion_weighted_regression",
+    "equations": [
+      "310",
+      "313",
+      "314",
+      "315",
+      "316",
+      "317",
+      "318"
+    ],
+    "summary": "3.10 Mean-reversion – weighted regression The conditions (310) satisfied by the demeaned returns when the loadings matrix is binary simply mean that these returns are cluster-neutral, i.e., orthogonal to the K N -vectors v (A) comprising the columns of ΛiA . Such orthogonality can be defined for any loadings matrix, not just a binary one. So, we can consider a generalization where the loadings matrix, call it ΩiA , may have some binary columns, but generally it need not. The binary columns, if any, can, e.g., be industry (or sector) based risk factors; the non-binary columns are interpreted as some non-industry based risk factors; and the orthogonality condition N X R ei ΩiA , A = 1, . . . , K (313) i=1 can be satisfied if the twiddled returns Rei are related to the residuals εi of the regression of Ri over ΩiA with some (generally nonuniform) regression weights zi via R e=Z ε (314) ε ="
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.11",
+    "title": "Single moving average",
+    "page": 49,
+    "slug": "single_moving_average",
+    "equations": [
+      "319",
+      "320",
+      "321"
+    ],
+    "summary": "3.11 Strategy: Single moving average This strategy is based on the stock price crossing a moving average. One can use different types of moving averages (MAs), such as a simple moving average (SMA), 54 For some literature on mean-reversion (a.k.a. contrarian) strategies, see, e.g., [Avellaneda and Lee, 2010], [Black and Litterman, 1991], [Black and Litterman, 1992], [Cheung, 2010], [Chin, Prevost and Gottesman, 2002], [Conrad and Kaul, 1998], [Daniel, 2001], [Da Silva, Lee and Porn- rojnangkool, 2009], [Doan, Alexeev and Brooks, 2014], [Drobetz, 2001], [Hodges and Carverhill, 1993], [Idzorek, 2007], [Jansen and Nikiforov, 2016], [Jegadeesh and Titman, 1995], [Kakushadze, 2015b], [Kang, Liu and Ni, 2002], [Kudryavtsev, 2012], [Lakonishok, Shleifer and Vishny, 1994], [Lehmann, 1990], [Li et al, 2012], [Liew and Roberts, 2013], [Lo and MacKinlay, 1990], [Mun, Vas- concellos and Kish,"
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.12",
+    "title": "Two moving averages",
+    "page": 50,
+    "slug": "two_moving_averages",
+    "equations": [
+      "321",
+      "322",
+      "1",
+      "2",
+      "3",
+      "323"
+    ],
+    "summary": "3.12 Strategy: Two moving averages The simplest variant of this strategy replaces the stock price P in Eq. (321) by another moving average. That is, we have 2 moving averages with lengths T 0 and T , where T 0 < T (e.g., T 0 = 10 and T = 30), and the signal is given by: ( Establish long/liquidate short position if MA(T 0 ) > MA(T ) Signal = (322) Establish short/liquidate long position if MA(T 0 ) < MA(T ) This signal can be augmented with additional “stop-loss” rules to protect realized profits. E.g., if a long position has been established, the trader can define a threshold 55 For T 1 we have λT 1 and EMA(T, λ) ≈ (1 − λ) P (1) + λ EMA(T − 1, λ), where EMA(T −1, λ) is based on P (2), P (3), . . . , P (T ). Also, for some literature on moving average based strategies, see, e.g., [BenZion et al, 2003], [Brock, Lakonishock and LeBaron, 1992], [Dzikevičius and Šaranda, 2010], [Edwards"
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.13",
+    "title": "Three moving averages",
+    "page": 51,
+    "slug": "three_moving_averages",
+    "equations": [],
+    "summary": "Implement the Three moving averages construction described in the cited book section."
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.14",
+    "title": "Support and resistance",
+    "page": 51,
+    "slug": "support_and_resistance",
+    "equations": [],
+    "summary": "2 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved."
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.15",
+    "title": "Channel",
+    "page": 52,
+    "slug": "channel",
+    "equations": [],
+    "summary": "3.15 Strategy: Channel . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52"
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.16",
+    "title": "Event-driven – M&A",
+    "page": 52,
+    "slug": "event_driven_m_and_a",
+    "equations": [],
+    "summary": "Implement the Event-driven – M&A construction described in the cited book section."
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.17",
+    "title": "Machine learning – single-stock KNN",
+    "page": 53,
+    "slug": "machine_learning_single_stock_knn",
+    "equations": [],
+    "summary": "Implement the Machine learning – single-stock KNN construction described in the cited book section."
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.18",
+    "title": "Statistical arbitrage – optimization",
+    "page": 55,
+    "slug": "statistical_arbitrage_optimization",
+    "equations": [],
+    "summary": "3.18.1 Dollar-neutrality . . . . . . . . . . . . . . . . . . . . . . . . . 56"
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.19",
+    "title": "Market-making",
+    "page": 58,
+    "slug": "market_making",
+    "equations": [],
+    "summary": "Implement the Market-making construction described in the cited book section."
+  },
+  {
+    "chapter": 3,
+    "folder": "stocks",
+    "section": "3.20",
+    "title": "Alpha combos",
+    "page": 59,
+    "slug": "alpha_combos",
+    "equations": [],
+    "summary": "3.21 A few comments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60 4 Exchange-traded funds (ETFs) 61"
+  },
+  {
+    "chapter": 4,
+    "folder": "etfs",
+    "section": "4.1",
+    "title": "Sector momentum rotation",
+    "page": 61,
+    "slug": "sector_momentum_rotation",
+    "equations": [],
+    "summary": "Implement the Sector momentum rotation construction described in the cited book section."
+  },
+  {
+    "chapter": 4,
+    "folder": "etfs",
+    "section": "4.1.1",
+    "title": "Sector momentum rotation with MA filter",
+    "page": 62,
+    "slug": "sector_momentum_rotation_with_ma_filter",
+    "equations": [],
+    "summary": "Implement the Sector momentum rotation with MA filter construction described in the cited book section."
+  },
+  {
+    "chapter": 4,
+    "folder": "etfs",
+    "section": "4.1.2",
+    "title": "Dual-momentum sector rotation",
+    "page": 62,
+    "slug": "dual_momentum_sector_rotation",
+    "equations": [],
+    "summary": "Implement the Dual-momentum sector rotation construction described in the cited book section."
+  },
+  {
+    "chapter": 4,
+    "folder": "etfs",
+    "section": "4.2",
+    "title": "Alpha rotation",
+    "page": 63,
+    "slug": "alpha_rotation",
+    "equations": [],
+    "summary": "Implement the Alpha rotation construction described in the cited book section."
+  },
+  {
+    "chapter": 4,
+    "folder": "etfs",
+    "section": "4.3",
+    "title": "R-squared",
+    "page": 63,
+    "slug": "r_squared",
+    "equations": [],
+    "summary": "Implement the R-squared construction described in the cited book section."
+  },
+  {
+    "chapter": 4,
+    "folder": "etfs",
+    "section": "4.4",
+    "title": "Mean-reversion",
+    "page": 64,
+    "slug": "mean_reversion",
+    "equations": [],
+    "summary": "Implement the Mean-reversion construction described in the cited book section."
+  },
+  {
+    "chapter": 4,
+    "folder": "etfs",
+    "section": "4.5",
+    "title": "Leveraged ETFs (LETFs)",
+    "page": 64,
+    "slug": "leveraged_etfs_letfs",
+    "equations": [],
+    "summary": "Implement the Leveraged ETFs (LETFs) construction described in the cited book section."
+  },
+  {
+    "chapter": 4,
+    "folder": "etfs",
+    "section": "4.6",
+    "title": "Multi-asset trend following",
+    "page": 65,
+    "slug": "multi_asset_trend_following",
+    "equations": [],
+    "summary": "5 Fixed Income 66 5.1 Generalities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66 5.1.1 Zero-coupon bonds . . . . . . . . . . . . . . . . . . . . . . . . 66 5.1.2 Bonds with coupons . . . . . . . . . . . . . . . . . . . . . . . 66 5.1.3 Floating rate bonds . . . . . . . . . . . . . . . . . . . . . . . . 67 5.1.4 Swaps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67 5.1.5 Duration and convexity . . . . . . . . . . . . . . . . . . . . . . 68"
+  },
+  {
+    "chapter": 5,
+    "folder": "fixed_income",
+    "section": "5.2",
+    "title": "Bullets",
+    "page": 69,
+    "slug": "bullets",
+    "equations": [],
+    "summary": "Implement the Bullets construction described in the cited book section."
+  },
+  {
+    "chapter": 5,
+    "folder": "fixed_income",
+    "section": "5.3",
+    "title": "Barbells",
+    "page": 69,
+    "slug": "barbells",
+    "equations": [],
+    "summary": "Implement the Barbells construction described in the cited book section."
+  },
+  {
+    "chapter": 5,
+    "folder": "fixed_income",
+    "section": "5.4",
+    "title": "Ladders",
+    "page": 70,
+    "slug": "ladders",
+    "equations": [],
+    "summary": "Implement the Ladders construction described in the cited book section."
+  },
+  {
+    "chapter": 5,
+    "folder": "fixed_income",
+    "section": "5.5",
+    "title": "Bond immunization",
+    "page": 70,
+    "slug": "bond_immunization",
+    "equations": [],
+    "summary": "Implement the Bond immunization construction described in the cited book section."
+  },
+  {
+    "chapter": 5,
+    "folder": "fixed_income",
+    "section": "5.6",
+    "title": "Dollar-duration-neutral butterfly",
+    "page": 71,
+    "slug": "dollar_duration_neutral_butterfly",
+    "equations": [],
+    "summary": "Implement the Dollar-duration-neutral butterfly construction described in the cited book section."
+  },
+  {
+    "chapter": 5,
+    "folder": "fixed_income",
+    "section": "5.7",
+    "title": "Fifty-fifty butterfly",
+    "page": 72,
+    "slug": "fifty_fifty_butterfly",
+    "equations": [],
+    "summary": "Implement the Fifty-fifty butterfly construction described in the cited book section."
+  },
+  {
+    "chapter": 5,
+    "folder": "fixed_income",
+    "section": "5.8",
+    "title": "Regression-weighted butterfly",
+    "page": 72,
+    "slug": "regression_weighted_butterfly",
+    "equations": [],
+    "summary": "Implement the Regression-weighted butterfly construction described in the cited book section."
+  },
+  {
+    "chapter": 5,
+    "folder": "fixed_income",
+    "section": "5.8.1",
+    "title": "Maturity-weighted butterfly",
+    "page": 73,
+    "slug": "maturity_weighted_butterfly",
+    "equations": [],
+    "summary": "Implement the Maturity-weighted butterfly construction described in the cited book section."
+  },
+  {
+    "chapter": 5,
+    "folder": "fixed_income",
+    "section": "5.9",
+    "title": "Low-risk factor",
+    "page": 73,
+    "slug": "low_risk_factor",
+    "equations": [],
+    "summary": "Implement the Low-risk factor construction described in the cited book section."
+  },
+  {
+    "chapter": 5,
+    "folder": "fixed_income",
+    "section": "5.10",
+    "title": "Value factor",
+    "page": 73,
+    "slug": "value_factor",
+    "equations": [],
+    "summary": "Implement the Value factor construction described in the cited book section."
+  },
+  {
+    "chapter": 5,
+    "folder": "fixed_income",
+    "section": "5.11",
+    "title": "Carry factor",
+    "page": 74,
+    "slug": "carry_factor",
+    "equations": [],
+    "summary": "Implement the Carry factor construction described in the cited book section."
+  },
+  {
+    "chapter": 5,
+    "folder": "fixed_income",
+    "section": "5.12",
+    "title": "Rolling down the yield curve",
+    "page": 74,
+    "slug": "rolling_down_the_yield_curve",
+    "equations": [],
+    "summary": "Implement the Rolling down the yield curve construction described in the cited book section."
+  },
+  {
+    "chapter": 5,
+    "folder": "fixed_income",
+    "section": "5.13",
+    "title": "Yield curve spread (flatteners & steepeners)",
+    "page": 75,
+    "slug": "yield_curve_spread_flatteners_and_steepeners",
+    "equations": [],
+    "summary": "Implement the Yield curve spread (flatteners & steepeners) construction described in the cited book section."
+  },
+  {
+    "chapter": 5,
+    "folder": "fixed_income",
+    "section": "5.14",
+    "title": "CDS basis arbitrage",
+    "page": 75,
+    "slug": "cds_basis_arbitrage",
+    "equations": [],
+    "summary": "Implement the CDS basis arbitrage construction described in the cited book section."
+  },
+  {
+    "chapter": 5,
+    "folder": "fixed_income",
+    "section": "5.15",
+    "title": "Swap-spread arbitrage",
+    "page": 76,
+    "slug": "swap_spread_arbitrage",
+    "equations": [],
+    "summary": "3 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved. 6 Indexes 76 6.1 Generalities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76"
+  },
+  {
+    "chapter": 6,
+    "folder": "indexes",
+    "section": "6.2",
+    "title": "Cash-and-carry arbitrage",
+    "page": 77,
+    "slug": "cash_and_carry_arbitrage",
+    "equations": [],
+    "summary": "Implement the Cash-and-carry arbitrage construction described in the cited book section."
+  },
+  {
+    "chapter": 6,
+    "folder": "indexes",
+    "section": "6.3",
+    "title": "Dispersion trading in equity indexes",
+    "page": 77,
+    "slug": "dispersion_trading_in_equity_indexes",
+    "equations": [],
+    "summary": "Implement the Dispersion trading in equity indexes construction described in the cited book section."
+  },
+  {
+    "chapter": 6,
+    "folder": "indexes",
+    "section": "6.3.1",
+    "title": "Dispersion trading – subset portfolio",
+    "page": 78,
+    "slug": "dispersion_trading_subset_portfolio",
+    "equations": [],
+    "summary": "Implement the Dispersion trading – subset portfolio construction described in the cited book section."
+  },
+  {
+    "chapter": 6,
+    "folder": "indexes",
+    "section": "6.4",
+    "title": "Intraday arbitrage between index ETFs",
+    "page": 79,
+    "slug": "intraday_arbitrage_between_index_etfs",
+    "equations": [],
+    "summary": "Implement the Intraday arbitrage between index ETFs construction described in the cited book section."
+  },
+  {
+    "chapter": 6,
+    "folder": "indexes",
+    "section": "6.5",
+    "title": "Index volatility targeting with risk-free asset",
+    "page": 80,
+    "slug": "index_volatility_targeting_with_risk_free_asset",
+    "equations": [],
+    "summary": "7 Volatility 80 7.1 Generalities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80"
+  },
+  {
+    "chapter": 7,
+    "folder": "volatility",
+    "section": "7.2",
+    "title": "VIX futures basis trading",
+    "page": 81,
+    "slug": "vix_futures_basis_trading",
+    "equations": [],
+    "summary": "Implement the VIX futures basis trading construction described in the cited book section."
+  },
+  {
+    "chapter": 7,
+    "folder": "volatility",
+    "section": "7.3",
+    "title": "Volatility carry with two ETNs",
+    "page": 82,
+    "slug": "volatility_carry_with_two_etns",
+    "equations": [],
+    "summary": "Implement the Volatility carry with two ETNs construction described in the cited book section."
+  },
+  {
+    "chapter": 7,
+    "folder": "volatility",
+    "section": "7.3.1",
+    "title": "Hedging short VXX with VIX futures",
+    "page": 82,
+    "slug": "hedging_short_vxx_with_vix_futures",
+    "equations": [],
+    "summary": "Implement the Hedging short VXX with VIX futures construction described in the cited book section."
+  },
+  {
+    "chapter": 7,
+    "folder": "volatility",
+    "section": "7.4",
+    "title": "Volatility risk premium",
+    "page": 83,
+    "slug": "volatility_risk_premium",
+    "equations": [],
+    "summary": "Implement the Volatility risk premium construction described in the cited book section."
+  },
+  {
+    "chapter": 7,
+    "folder": "volatility",
+    "section": "7.4.1",
+    "title": "Volatility risk premium with Gamma hedging",
+    "page": 83,
+    "slug": "volatility_risk_premium_with_gamma_hedging",
+    "equations": [],
+    "summary": "Implement the Volatility risk premium with Gamma hedging construction described in the cited book section."
+  },
+  {
+    "chapter": 7,
+    "folder": "volatility",
+    "section": "7.5",
+    "title": "Volatility skew – long risk reversal",
+    "page": 84,
+    "slug": "volatility_skew_long_risk_reversal",
+    "equations": [],
+    "summary": "Implement the Volatility skew – long risk reversal construction described in the cited book section."
+  },
+  {
+    "chapter": 7,
+    "folder": "volatility",
+    "section": "7.6",
+    "title": "Volatility trading with variance swaps",
+    "page": 84,
+    "slug": "volatility_trading_with_variance_swaps",
+    "equations": [],
+    "summary": "8 Foreign Exchange (FX) 85"
+  },
+  {
+    "chapter": 8,
+    "folder": "fx",
+    "section": "8.1",
+    "title": "Moving averages with HP filter",
+    "page": 85,
+    "slug": "moving_averages_with_hp_filter",
+    "equations": [],
+    "summary": "Implement the Moving averages with HP filter construction described in the cited book section."
+  },
+  {
+    "chapter": 8,
+    "folder": "fx",
+    "section": "8.2",
+    "title": "Carry trade",
+    "page": 86,
+    "slug": "carry_trade",
+    "equations": [],
+    "summary": "Implement the Carry trade construction described in the cited book section."
+  },
+  {
+    "chapter": 8,
+    "folder": "fx",
+    "section": "8.2.1",
+    "title": "High-minus-low carry",
+    "page": 87,
+    "slug": "high_minus_low_carry",
+    "equations": [],
+    "summary": "Implement the High-minus-low carry construction described in the cited book section."
+  },
+  {
+    "chapter": 8,
+    "folder": "fx",
+    "section": "8.3",
+    "title": "Dollar carry trade",
+    "page": 88,
+    "slug": "dollar_carry_trade",
+    "equations": [],
+    "summary": "Implement the Dollar carry trade construction described in the cited book section."
+  },
+  {
+    "chapter": 8,
+    "folder": "fx",
+    "section": "8.4",
+    "title": "Momentum & carry combo",
+    "page": 88,
+    "slug": "momentum_and_carry_combo",
+    "equations": [],
+    "summary": "Implement the Momentum & carry combo construction described in the cited book section."
+  },
+  {
+    "chapter": 8,
+    "folder": "fx",
+    "section": "8.5",
+    "title": "FX triangular arbitrage",
+    "page": 89,
+    "slug": "fx_triangular_arbitrage",
+    "equations": [],
+    "summary": "9 Commodities 89"
+  },
+  {
+    "chapter": 9,
+    "folder": "commodities",
+    "section": "9.1",
+    "title": "Roll yields",
+    "page": 89,
+    "slug": "roll_yields",
+    "equations": [],
+    "summary": "Implement the Roll yields construction described in the cited book section."
+  },
+  {
+    "chapter": 9,
+    "folder": "commodities",
+    "section": "9.2",
+    "title": "Trading based on hedging pressure",
+    "page": 90,
+    "slug": "trading_based_on_hedging_pressure",
+    "equations": [],
+    "summary": "Implement the Trading based on hedging pressure construction described in the cited book section."
+  },
+  {
+    "chapter": 9,
+    "folder": "commodities",
+    "section": "9.3",
+    "title": "Portfolio diversification with commodities",
+    "page": 90,
+    "slug": "portfolio_diversification_with_commodities",
+    "equations": [],
+    "summary": "Implement the Portfolio diversification with commodities construction described in the cited book section."
+  },
+  {
+    "chapter": 9,
+    "folder": "commodities",
+    "section": "9.4",
+    "title": "Value",
+    "page": 90,
+    "slug": "value",
+    "equations": [],
+    "summary": "Implement the Value construction described in the cited book section."
+  },
+  {
+    "chapter": 9,
+    "folder": "commodities",
+    "section": "9.5",
+    "title": "Skewness premium",
+    "page": 91,
+    "slug": "skewness_premium",
+    "equations": [],
+    "summary": "Implement the Skewness premium construction described in the cited book section."
+  },
+  {
+    "chapter": 9,
+    "folder": "commodities",
+    "section": "9.6",
+    "title": "Trading with pricing models",
+    "page": 91,
+    "slug": "trading_with_pricing_models",
+    "equations": [],
+    "summary": "10 Futures 92"
+  },
+  {
+    "chapter": 10,
+    "folder": "futures",
+    "section": "10.1",
+    "title": "Hedging risk with futures",
+    "page": 92,
+    "slug": "hedging_risk_with_futures",
+    "equations": [],
+    "summary": "Implement the Hedging risk with futures construction described in the cited book section."
+  },
+  {
+    "chapter": 10,
+    "folder": "futures",
+    "section": "10.1.1",
+    "title": "Cross-hedging",
+    "page": 93,
+    "slug": "cross_hedging",
+    "equations": [],
+    "summary": "Implement the Cross-hedging construction described in the cited book section."
+  },
+  {
+    "chapter": 10,
+    "folder": "futures",
+    "section": "10.1.2",
+    "title": "Interest rate risk hedging",
+    "page": 93,
+    "slug": "interest_rate_risk_hedging",
+    "equations": [],
+    "summary": "Implement the Interest rate risk hedging construction described in the cited book section."
+  },
+  {
+    "chapter": 10,
+    "folder": "futures",
+    "section": "10.2",
+    "title": "Calendar spread",
+    "page": 94,
+    "slug": "calendar_spread",
+    "equations": [],
+    "summary": "Implement the Calendar spread construction described in the cited book section."
+  },
+  {
+    "chapter": 10,
+    "folder": "futures",
+    "section": "10.3",
+    "title": "Contrarian trading (mean-reversion)",
+    "page": 95,
+    "slug": "contrarian_trading_mean_reversion",
+    "equations": [],
+    "summary": "Implement the Contrarian trading (mean-reversion) construction described in the cited book section."
+  },
+  {
+    "chapter": 10,
+    "folder": "futures",
+    "section": "10.3.1",
+    "title": "Contrarian trading – market activity",
+    "page": 95,
+    "slug": "contrarian_trading_market_activity",
+    "equations": [],
+    "summary": "Implement the Contrarian trading – market activity construction described in the cited book section."
+  },
+  {
+    "chapter": 10,
+    "folder": "futures",
+    "section": "10.4",
+    "title": "Trend following (momentum)",
+    "page": 96,
+    "slug": "trend_following_momentum",
+    "equations": [],
+    "summary": "4 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved. 11 Structured Assets 97 11.1 Generalities: Collateralized Debt Obligations (CDOs) . . . . . . . . . 97"
+  },
+  {
+    "chapter": 11,
+    "folder": "structured_assets",
+    "section": "11.2",
+    "title": "Carry, equity tranche – index hedging",
+    "page": 99,
+    "slug": "carry_equity_tranche_index_hedging",
+    "equations": [],
+    "summary": "Implement the Carry, equity tranche – index hedging construction described in the cited book section."
+  },
+  {
+    "chapter": 11,
+    "folder": "structured_assets",
+    "section": "11.3",
+    "title": "Carry, senior/mezzanine – index hedging",
+    "page": 99,
+    "slug": "carry_senior_mezzanine_index_hedging",
+    "equations": [],
+    "summary": "Implement the Carry, senior/mezzanine – index hedging construction described in the cited book section."
+  },
+  {
+    "chapter": 11,
+    "folder": "structured_assets",
+    "section": "11.4",
+    "title": "Carry – tranche hedging",
+    "page": 99,
+    "slug": "carry_tranche_hedging",
+    "equations": [],
+    "summary": "Implement the Carry – tranche hedging construction described in the cited book section."
+  },
+  {
+    "chapter": 11,
+    "folder": "structured_assets",
+    "section": "11.5",
+    "title": "Carry – CDS hedging",
+    "page": 100,
+    "slug": "carry_cds_hedging",
+    "equations": [],
+    "summary": "Implement the Carry – CDS hedging construction described in the cited book section."
+  },
+  {
+    "chapter": 11,
+    "folder": "structured_assets",
+    "section": "11.6",
+    "title": "CDOs – curve trades",
+    "page": 100,
+    "slug": "cdos_curve_trades",
+    "equations": [],
+    "summary": "Implement the CDOs – curve trades construction described in the cited book section."
+  },
+  {
+    "chapter": 11,
+    "folder": "structured_assets",
+    "section": "11.7",
+    "title": "Mortgage-backed security (MBS) trading",
+    "page": 100,
+    "slug": "mortgage_backed_security_mbs_trading",
+    "equations": [],
+    "summary": "12 Convertibles 101"
+  },
+  {
+    "chapter": 12,
+    "folder": "convertibles",
+    "section": "12.1",
+    "title": "Convertible arbitrage",
+    "page": 101,
+    "slug": "convertible_arbitrage",
+    "equations": [],
+    "summary": "Implement the Convertible arbitrage construction described in the cited book section."
+  },
+  {
+    "chapter": 12,
+    "folder": "convertibles",
+    "section": "12.2",
+    "title": "Convertible option-adjusted spread",
+    "page": 102,
+    "slug": "convertible_option_adjusted_spread",
+    "equations": [],
+    "summary": "13 Tax Arbitrage 102"
+  },
+  {
+    "chapter": 13,
+    "folder": "tax_arbitrage",
+    "section": "13.1",
+    "title": "Municipal bond tax arbitrage",
+    "page": 102,
+    "slug": "municipal_bond_tax_arbitrage",
+    "equations": [],
+    "summary": "Implement the Municipal bond tax arbitrage construction described in the cited book section."
+  },
+  {
+    "chapter": 13,
+    "folder": "tax_arbitrage",
+    "section": "13.2",
+    "title": "Cross-border tax arbitrage",
+    "page": 103,
+    "slug": "cross_border_tax_arbitrage",
+    "equations": [],
+    "summary": "Implement the Cross-border tax arbitrage construction described in the cited book section."
+  },
+  {
+    "chapter": 13,
+    "folder": "tax_arbitrage",
+    "section": "13.2.1",
+    "title": "Cross-border tax arbitrage with options",
+    "page": 104,
+    "slug": "cross_border_tax_arbitrage_with_options",
+    "equations": [],
+    "summary": "14 Miscellaneous Assets 104"
+  },
+  {
+    "chapter": 14,
+    "folder": "miscellaneous_assets",
+    "section": "14.1",
+    "title": "Inflation hedging – inflation swaps",
+    "page": 104,
+    "slug": "inflation_hedging_inflation_swaps",
+    "equations": [],
+    "summary": "Implement the Inflation hedging – inflation swaps construction described in the cited book section."
+  },
+  {
+    "chapter": 14,
+    "folder": "miscellaneous_assets",
+    "section": "14.2",
+    "title": "TIPS-Treasury arbitrage",
+    "page": 105,
+    "slug": "tips_treasury_arbitrage",
+    "equations": [],
+    "summary": "Implement the TIPS-Treasury arbitrage construction described in the cited book section."
+  },
+  {
+    "chapter": 14,
+    "folder": "miscellaneous_assets",
+    "section": "14.3",
+    "title": "Weather risk – demand hedging",
+    "page": 106,
+    "slug": "weather_risk_demand_hedging",
+    "equations": [],
+    "summary": "Implement the Weather risk – demand hedging construction described in the cited book section."
+  },
+  {
+    "chapter": 14,
+    "folder": "miscellaneous_assets",
+    "section": "14.4",
+    "title": "Energy – spark spread",
+    "page": 108,
+    "slug": "energy_spark_spread",
+    "equations": [],
+    "summary": "15 Distressed Assets 108"
+  },
+  {
+    "chapter": 15,
+    "folder": "distressed_assets",
+    "section": "15.1",
+    "title": "Buying and holding distressed debt",
+    "page": 108,
+    "slug": "buying_and_holding_distressed_debt",
+    "equations": [],
+    "summary": "Implement the Buying and holding distressed debt construction described in the cited book section."
+  },
+  {
+    "chapter": 15,
+    "folder": "distressed_assets",
+    "section": "15.2",
+    "title": "Active distressed investing",
+    "page": 109,
+    "slug": "active_distressed_investing",
+    "equations": [],
+    "summary": "Implement the Active distressed investing construction described in the cited book section."
+  },
+  {
+    "chapter": 15,
+    "folder": "distressed_assets",
+    "section": "15.2.1",
+    "title": "Planning a reorganization",
+    "page": 109,
+    "slug": "planning_a_reorganization",
+    "equations": [],
+    "summary": "Implement the Planning a reorganization construction described in the cited book section."
+  },
+  {
+    "chapter": 15,
+    "folder": "distressed_assets",
+    "section": "15.2.2",
+    "title": "Buying outstanding debt",
+    "page": 109,
+    "slug": "buying_outstanding_debt",
+    "equations": [],
+    "summary": "Implement the Buying outstanding debt construction described in the cited book section."
+  },
+  {
+    "chapter": 15,
+    "folder": "distressed_assets",
+    "section": "15.2.3",
+    "title": "Loan-to-own",
+    "page": 110,
+    "slug": "loan_to_own",
+    "equations": [],
+    "summary": "Implement the Loan-to-own construction described in the cited book section."
+  },
+  {
+    "chapter": 15,
+    "folder": "distressed_assets",
+    "section": "15.3",
+    "title": "Distress risk puzzle",
+    "page": 110,
+    "slug": "distress_risk_puzzle",
+    "equations": [],
+    "summary": "Implement the Distress risk puzzle construction described in the cited book section."
+  },
+  {
+    "chapter": 15,
+    "folder": "distressed_assets",
+    "section": "15.3.1",
+    "title": "Distress risk puzzle – risk management",
+    "page": 110,
+    "slug": "distress_risk_puzzle_risk_management",
+    "equations": [],
+    "summary": "16 Real Estate 111 16.1 Generalities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 111"
+  },
+  {
+    "chapter": 16,
+    "folder": "real_estate",
+    "section": "16.2",
+    "title": "Mixed-asset diversification with real estate",
+    "page": 111,
+    "slug": "mixed_asset_diversification_with_real_estate",
+    "equations": [],
+    "summary": "Implement the Mixed-asset diversification with real estate construction described in the cited book section."
+  },
+  {
+    "chapter": 16,
+    "folder": "real_estate",
+    "section": "16.3",
+    "title": "Intra-asset diversification within real estate",
+    "page": 112,
+    "slug": "intra_asset_diversification_within_real_estate",
+    "equations": [],
+    "summary": "Implement the Intra-asset diversification within real estate construction described in the cited book section."
+  },
+  {
+    "chapter": 16,
+    "folder": "real_estate",
+    "section": "16.3.1",
+    "title": "Property type diversification",
+    "page": 112,
+    "slug": "property_type_diversification",
+    "equations": [],
+    "summary": "Implement the Property type diversification construction described in the cited book section."
+  },
+  {
+    "chapter": 16,
+    "folder": "real_estate",
+    "section": "16.3.2",
+    "title": "Economic diversification",
+    "page": 112,
+    "slug": "economic_diversification",
+    "equations": [],
+    "summary": "Implement the Economic diversification construction described in the cited book section."
+  },
+  {
+    "chapter": 16,
+    "folder": "real_estate",
+    "section": "16.3.3",
+    "title": "Property type and geographic diversification",
+    "page": 113,
+    "slug": "property_type_and_geographic_diversification",
+    "equations": [],
+    "summary": "Implement the Property type and geographic diversification construction described in the cited book section."
+  },
+  {
+    "chapter": 16,
+    "folder": "real_estate",
+    "section": "16.4",
+    "title": "Real estate momentum – regional approach",
+    "page": 113,
+    "slug": "real_estate_momentum_regional_approach",
+    "equations": [],
+    "summary": "Implement the Real estate momentum – regional approach construction described in the cited book section."
+  },
+  {
+    "chapter": 16,
+    "folder": "real_estate",
+    "section": "16.5",
+    "title": "Inflation hedging with real estate",
+    "page": 113,
+    "slug": "inflation_hedging_with_real_estate",
+    "equations": [],
+    "summary": "Implement the Inflation hedging with real estate construction described in the cited book section."
+  },
+  {
+    "chapter": 16,
+    "folder": "real_estate",
+    "section": "16.6",
+    "title": "Fix-and-flip",
+    "page": 114,
+    "slug": "fix_and_flip",
+    "equations": [],
+    "summary": "5 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved. 17 Cash 114 17.1 Generalities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114"
+  },
+  {
+    "chapter": 17,
+    "folder": "cash",
+    "section": "17.2",
+    "title": "Money laundering – the dark side of cash",
+    "page": 114,
+    "slug": "money_laundering_the_dark_side_of_cash",
+    "equations": [],
+    "summary": "Implement the Money laundering – the dark side of cash construction described in the cited book section."
+  },
+  {
+    "chapter": 17,
+    "folder": "cash",
+    "section": "17.3",
+    "title": "Liquidity management",
+    "page": 115,
+    "slug": "liquidity_management",
+    "equations": [],
+    "summary": "Implement the Liquidity management construction described in the cited book section."
+  },
+  {
+    "chapter": 17,
+    "folder": "cash",
+    "section": "17.4",
+    "title": "Repurchase agreement (REPO)",
+    "page": 115,
+    "slug": "repurchase_agreement_repo",
+    "equations": [],
+    "summary": "Implement the Repurchase agreement (REPO) construction described in the cited book section."
+  },
+  {
+    "chapter": 17,
+    "folder": "cash",
+    "section": "17.5",
+    "title": "Pawnbroking",
+    "page": 115,
+    "slug": "pawnbroking",
+    "equations": [],
+    "summary": "Implement the Pawnbroking construction described in the cited book section."
+  },
+  {
+    "chapter": 17,
+    "folder": "cash",
+    "section": "17.6",
+    "title": "Loan sharking",
+    "page": 116,
+    "slug": "loan_sharking",
+    "equations": [],
+    "summary": "18 Cryptocurrencies 116 18.1 Generalities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116"
+  },
+  {
+    "chapter": 18,
+    "folder": "cryptocurrencies",
+    "section": "18.2",
+    "title": "Artificial neural network (ANN)",
+    "page": 116,
+    "slug": "artificial_neural_network_ann",
+    "equations": [],
+    "summary": "Implement the Artificial neural network (ANN) construction described in the cited book section."
+  },
+  {
+    "chapter": 18,
+    "folder": "cryptocurrencies",
+    "section": "18.3",
+    "title": "Sentiment analysis – naı̈ve Bayes Bernoulli",
+    "page": 120,
+    "slug": "sentiment_analysis_nave_bayes_bernoulli",
+    "equations": [],
+    "summary": "19 Global Macro 121 19.1 Generalities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121"
+  },
+  {
+    "chapter": 19,
+    "folder": "global_macro",
+    "section": "19.2",
+    "title": "Fundamental macro momentum",
+    "page": 122,
+    "slug": "fundamental_macro_momentum",
+    "equations": [],
+    "summary": "Implement the Fundamental macro momentum construction described in the cited book section."
+  },
+  {
+    "chapter": 19,
+    "folder": "global_macro",
+    "section": "19.3",
+    "title": "Global macro inflation hedge",
+    "page": 122,
+    "slug": "global_macro_inflation_hedge",
+    "equations": [],
+    "summary": "Implement the Global macro inflation hedge construction described in the cited book section."
+  },
+  {
+    "chapter": 19,
+    "folder": "global_macro",
+    "section": "19.4",
+    "title": "Global fixed-income strategy",
+    "page": 123,
+    "slug": "global_fixed_income_strategy",
+    "equations": [],
+    "summary": "Implement the Global fixed-income strategy construction described in the cited book section."
+  },
+  {
+    "chapter": 19,
+    "folder": "global_macro",
+    "section": "19.5",
+    "title": "Trading on economic announcements",
+    "page": 123,
+    "slug": "trading_on_economic_announcements",
+    "equations": [],
+    "summary": "20 Infrastructure 123 Acknowledgments 124 A R Source Code for Backtesting 125 B DISCLAIMERS 132 References 134 Glossary 279 Acronyms 336 Some Math Notations 340 Explanatory Comments for Index 341 Index 342 6 Electronic copy available at: https://ssrn.com/abstract=3247865 Copyright c 2018 Zura Kakushadze and Juan Andrés Serur. All Rights Reserved. Praises of 151 Trading Strategies “If you want to work as a trader or quant on Wall Street, you have to walk the walk and talk the talk. This unique book is a comprehensive introduction to a wide variety of tried and tested trading strategies. I highly recommend a 152nd trading strategy called buy this book!” –Peter Carr, Professor and Chair of Finance and Risk Engineering Depart- ment, NYU’s Tandon School of Engineering; and 2010 Financial Engineer of the Year, International Association for Quantitative Finance & Sungard “This book is an"
+  }
+]
