@@ -1,76 +1,38 @@
-# NSE Strategy Screener
+# NSE Strategy Screener and 151 Trading Strategies Library
 
-A strict NSE equity screening pipeline that:
+This repository implements every strategy heading in Kakushadze & Serur, including named variants and §3.10: **174 strategy modules**. One strategy lives in each module, grouped by the book's actual asset-class chapters.
 
-1. downloads the current NSE `EQ`-series equity universe;
-2. keeps stocks whose latest close is above a 52-week simple moving average, requiring 52 valid weekly closes; and
-3. calculates daily Camarilla H1-H4 and L1-L4 from the latest completed session's high, low and close.
+## Structure
 
-The code is arranged so more daily-bar strategies can be added under `strategies/`.
+- `cash/`: 5 strategy modules
+- `commodities/`: 6 strategy modules
+- `convertibles/`: 2 strategy modules
+- `cryptocurrencies/`: 2 strategy modules
+- `distressed_assets/`: 7 strategy modules
+- `etfs/`: 8 strategy modules
+- `fixed_income/`: 15 strategy modules
+- `futures/`: 7 strategy modules
+- `fx/`: 6 strategy modules
+- `global_macro/`: 4 strategy modules
+- `indexes/`: 5 strategy modules
+- `miscellaneous_assets/`: 4 strategy modules
+- `options/`: 58 strategy modules
+- `real_estate/`: 8 strategy modules
+- `stocks/`: 21 strategy modules
+- `structured_assets/`: 6 strategy modules
+- `tax_arbitrage/`: 3 strategy modules
+- `volatility/`: 7 strategy modules
 
-## Data and limitations
+Each asset folder also contains `__init__.py`; those package markers are not counted as strategies. Modules declare `STATUS`, `DATA_REQUIREMENTS`, `SIGNAL_RULE`, and a stable `signal(inputs)` adapter. Reference-only strategies explicitly wait for the named feed instead of inventing data or trades.
 
-- Universe: NSE's official equity list (`EQUITY_L.csv`), filtered to `SERIES == EQ`.
-- Prices: Yahoo Finance via `yfinance`. Yahoo is convenient but is not an exchange-licensed real-time feed. Missing or stale symbols are reported, not silently filled.
-- The screen uses completed daily bars. Standard daily Camarilla levels for a trading day use the previous completed session's H/L/C.
-- Corporate actions, symbol mappings, illiquid stocks and Yahoo coverage can affect results.
-- Outputs are mechanical research screens, not investment advice.
+## NSE daily engine
 
-For licensed exchange-wide NSE snapshots, replace the downloader in `data.py` with a vendor adapter such as Global Datafeeds.
-
-## Install
-
-Python 3.11+ is recommended.
+The executable daily OHLCV helpers remain wired into `main.py` and `daily_picks.py` through the `stocks` package: price momentum, moving averages, low volatility, pairs/mean reversion, support/resistance (including Camarilla), channel/Donchian, KNN, and the strict 52-week SMA helper.
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate       # Windows: .venv\\Scripts\\activate
 pip install -r requirements.txt
-```
-
-## Run
-
-```bash
 python main.py --output-dir output
-```
-
-Useful options:
-
-```bash
-python main.py --help
-python main.py --batch-size 100 --pause 1.0
-python main.py --limit 50        # quick test only
-```
-
-Files written:
-
-- `output/nse_52week_sma_screen.csv`
-- `output/nse_daily_camarilla.csv`
-- `output/coverage_report.csv`
-
-`coverage_report.csv` makes gaps explicit. A symbol is only included in the SMA pass list when there are at least 52 valid weekly closes and the latest close is strictly greater than the 52-week SMA.
-
-## Add a strategy
-
-Create a module in `strategies/` that accepts one symbol's completed daily OHLCV DataFrame and returns signal fields. Register it in `strategies/__init__.py`. Keep strategy rules mechanical and make required data explicit.
-
-## Camarilla formula
-
-With `R = high - low`:
-
-- `H1, H2, H3, H4 = close + R * 1.1 / (12, 6, 4, 2)`
-- `L1, L2, L3, L4 = close - R * 1.1 / (12, 6, 4, 2)`
-
-Formula reference: https://www.clientam.com.hk/en/software/tws/usersguidebook/technicalanalytics/camarillapivotpoints.htm
-
-## Daily top-10 picks engine
-
-Run after the previous NSE session has completed and before the next open:
-
-```bash
 python daily_picks.py --output output/daily_top10.csv
 ```
 
-It combines the book's 12-1 momentum, 10/30 MA state, 3/10/21 MA state, classic pivot, low-volatility rank and Donchian state. It excludes histories whose latest bar does not match the modal latest NSE session. The output contains direction, next-session pivot entry trigger, R1/S1 target, and a 2% stop. The book does not prescribe a stop for most strategies; this shared 2% stop is a deliberate risk overlay based on the example in its two-moving-average section.
-
-Entry triggers are levels, not guaranteed fills. A live or broker feed is required to determine whether a trigger traded and at what executable price.
+Yahoo Finance is a convenient research source, not an exchange-licensed real-time feed. Outputs are mechanical research screens, not investment advice.
